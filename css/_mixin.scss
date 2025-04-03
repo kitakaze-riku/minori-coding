@@ -1,0 +1,76 @@
+//fontサイズ管理
+//@include clamp-text("xs")で呼び出し
+//""が抜けると数値として扱われエラーとなる
+$font-clamp-sizes: (
+  // 16pxテキストに使用
+  "xs": (14px, 1.111vw, 16px),
+  // 18pxテキストに使用
+  "xs-xl": (16px, 1.25vw, 20px),
+  // 20pxテキストに使用
+  "sm": (18px, 1.388vw, 22px),
+  // 22pxテキストに使用
+  "md": (22px, 1.52vw, 24px),
+  // 24pxテキストに使用
+  "lg": (20px, 1.666vw, 26px),
+  // 26pxテキストに使用（追加）
+  "lg-xl":(20px, 1.8vw, 28px),
+  // 28pxテキストに使用
+  "xl": (25px, 1.94vw, 30px),
+  // 32pxテキストに使用
+  "2xl": (24px, 2.2vw, 34px),
+  // 40pxテキストに使用
+  "3xl": (30px, 2.77vw, 40px),
+  // 48oxテキストに使用
+  "4xl": (38px, 3.33vw, 50px)
+);
+
+@mixin clamp-text($size) {
+  @if map-has-key($font-clamp-sizes, $size) {
+    $values: map-get($font-clamp-sizes, $size);
+
+    @if not index($values, null) {
+      font-size: clamp(nth($values, 1), nth($values, 2), nth($values, 3));
+    }
+
+    @else {
+      @warn "Warning: `#{$size}` contains null values.";
+    }
+  }
+
+  @else {
+    @warn "Warning: Undefined size `#{$size}` in $font-clamp-sizes.";
+  }
+}
+
+// セクションのレイヤースタイルを適用するミックスイン
+// 位置調整、パディング、角丸デザインを一括適用できる
+@mixin section-layer-style($top: -80px, // セクション全体を上に移動（負の値で上方向）
+  $padding-top: 80px, // 上側の余白
+  $padding-bottom: 188px, // 下側の余白
+  $border-radius: 100px // 上部の角丸半径
+
+) {
+  position: relative;
+  top: $top;
+  padding-top: $padding-top;
+  padding-bottom: $padding-bottom;
+  border-top-left-radius: $border-radius;
+  border-top-right-radius: $border-radius;
+}
+
+
+// ブレイクポイント管理
+//@include mq("pc")でpcのブレイクポイントを呼び出し
+$breakpoints: (
+  "pclg": 1440px,
+  "pc": 1200px,
+  "lp": 992px,
+  "tb": 820px,
+  "sp": 576px
+);
+
+@mixin mq($size) {
+  @media (max-width: map-get($breakpoints, $size)) {
+    @content;
+  }
+}

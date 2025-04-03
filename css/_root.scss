@@ -1,0 +1,289 @@
+// 共通スタイル start
+:root {
+  --white: #ffffff;
+  --black: #333333;
+  --text-base: #595760;
+  --gray-900: #666166;
+  --gray-800: #7a727a;
+  --gray-700: #908e96;
+  --gray-600: #b1acac;
+  --gray-500: #c2c2c2;
+  --gray-400: #dfdfdf;
+  --gray-200: #e3e1e3;
+  --primary-600: #b16c83;
+  --primary-500: #b77883;
+  --accent-primary: #d26589;
+  --primary-300: #F3F0EC;
+  --primary-200: #f3e7eb;
+  --primary-100: #FDFCFC;
+  --category-minori: #F4E8EB;
+  --category-hohoemi: #E5F4E3;
+  --category-hohoemi-color: #59A552;
+  --bg-pink: #F0E5EB;
+  --minorishadow: #988E8D40;
+
+
+  // font
+  --font-family-ZenMaru: "Zen Maru Gothic", serif;
+  --font-family-ZenKaku: "Zen Kaku Gothic New", serif;
+  --font-family-Outfit: "Outfit", sans-serif;
+
+  // font-weight
+
+  --weight-black: 900;
+  --weight-bold: 700;
+  --weight-normal: 500;
+  --weight-regular: 400;
+  --weight-light: 300;
+}
+
+
+.nav-btn {
+  color: var(--white);
+  background-color: var(--primary-500);
+  font-weight: var(--weight-bold);
+  border-radius: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  /* はみ出し防止 */
+  transition: background-color 0.4s ease;
+
+  span {
+    z-index: 2;
+  }
+}
+
+/* 下から広がる円形オーバーレイ */
+.nav-btn::before {
+  content: "";
+  position: absolute;
+  bottom: -50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background-color: #A56076;
+  /* 濃い色のオーバーレイ */
+  border-radius: 50%;
+  transition: width 0.7s ease, height 0.7s ease, bottom 0.7s ease;
+  transform: translateX(-50%);
+}
+
+.nav-btn:hover::before {
+  width: 200%;
+  height: 200%;
+  bottom: -20%;
+}
+
+.nav-btn:hover {
+  background-color: #ca708c;
+  /* 最終的に暗くする */
+}
+
+
+.arrow-btn {
+  position: relative;
+
+  &::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    background-image: url('../images/common/right-arrow.svg');
+    top: 50%;
+    right: 9.58%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.arrow-btn-bg-white {
+  position: relative;
+
+
+  &::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background-image: url('../images/common/arrow-bg-white.svg');
+    top: 50%;
+    right: 3.7%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.medium-btn {
+  width: clamp(200px, 16.66vw, 240px);
+  padding: 16px 0;
+  text-decoration: none;
+  margin: 0 auto;
+}
+
+.sns-button {
+  position: relative;
+
+  &::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background-image: url('../images/common/open_in_new-white.svg');
+    top: 50%;
+    right: 4%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    background-size: cover;
+    background-position: center;
+  }
+
+  span {
+    margin-right: 15px;
+  }
+}
+
+.sns-button-instagram {
+  width: clamp(263px, 18.26vw, 400px);
+}
+
+.sns-button-youtube {
+  width: clamp(283px, 19.65vw, 400px);
+}
+
+.info-btn {
+  width: clamp(152px, 10.55vw, 300px);
+}
+
+.footer-btn {
+  width: 90px;
+  height: 26px;
+  padding: 0;
+  line-height: 1.4;
+}
+
+.contact-btn {
+  width: clamp(283px, 22.43vw, 323px);
+}
+
+// 共通ボタン end
+
+// コンテンツ幅 start
+.content-width-large {
+  width: min(83.33vw, 1200px);
+  margin: 0 auto;
+}
+
+.content-width-medium {
+  width: min(75.55vw, 1080px);
+  margin: 0 auto;
+}
+
+.content-width-medium-small {
+  width: min(71.11vw, 1024px);
+  margin: 0 auto;
+}
+
+.news-content-width {
+  width: min(56.94vw, 820px);
+  margin: 0 auto;
+}
+
+// コンテンツ幅 end
+
+
+//start 角丸背景
+.rounded-bg {
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+}
+
+// end 角丸背景
+
+// start 背景指定
+.white-bg {
+  background-color: var(--white);
+}
+
+.beige-bg {
+  background: var(--primary-300) url("../images/main/beige-bg.png") center/cover no-repeat;
+  background-blend-mode: overlay; // 合成モードを適用
+}
+
+.pink-bg {
+  background: var(--bg-pink) url("../images/main/beige-bg.png") center/cover no-repeat;
+  background-blend-mode: overlay; // 合成モードを適用
+}
+
+.gray-bg {
+  background: #7A727A33 url("../images/main/beige-bg.png") center/cover no-repeat;
+  background-blend-mode: overlay; // 合成モードを適用
+}
+
+//start レイヤー重なり部分調整
+.layerbg-beige {
+  background-color: #F0E9E2;
+  width: 100%;
+}
+
+.layerbg-beige-blend {
+  background: var(--primary-300) url("../images/main/beige-bg.png") center/cover no-repeat;
+  background-blend-mode: overlay; // 合成モードを適用
+}
+
+//end レイヤー重なり部分調整
+
+// end   背景指定
+//start ラジオボタン色変更
+
+/* ラジオボタンのカスタムスタイル */
+input[type="radio"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--primary-600); /* 枠線の色 */
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+/* 選択されたときのスタイル */
+input[type="radio"]:checked {
+  background-color: white; /* 背景色 */
+  border-color: var(--primary-600);
+}
+
+/* 中心の点を表示 */
+input[type="radio"]::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: var(--primary-600);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.2s ease-in-out;
+}
+
+/* 選択されたときに中心の点を拡大 */
+input[type="radio"]:checked::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+//end ラジオボタン色変更
+
+// 共通スタイル end

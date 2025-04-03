@@ -1,0 +1,28 @@
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: var(--font-family-ZenMaru);
+  color: var(--text-base);
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-base);
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.text-br-clear {
+  display: block;
+}
+
+iframe {
+  width: 100%;
+}
