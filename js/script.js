@@ -37,3 +37,32 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+
+let blogSwiper = null;
+
+function initBlogSwiper() {
+  const screenWidth = window.innerWidth;
+
+  if (screenWidth <= 820 && blogSwiper === null) {
+    blogSwiper = new Swiper('.sns-blog-section.swiper', {
+      slidesPerView: 'auto',
+      spaceBetween: 32,
+      centeredSlides: false,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  } else if (screenWidth > 820 && blogSwiper !== null) {
+    blogSwiper.destroy(true, true);
+    blogSwiper = null;
+  }
+}
+
+window.addEventListener('load', initBlogSwiper);
+window.addEventListener('resize', initBlogSwiper);

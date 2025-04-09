@@ -1,3 +1,5 @@
+@use 'mixin' as *;
+
 // 共通スタイル start
 :root {
   --white: #ffffff;
@@ -253,7 +255,8 @@ input[type="radio"] {
   appearance: none;
   width: 20px;
   height: 20px;
-  border: 2px solid var(--primary-600); /* 枠線の色 */
+  border: 2px solid var(--primary-600);
+  /* 枠線の色 */
   border-radius: 50%;
   display: inline-block;
   position: relative;
@@ -262,7 +265,8 @@ input[type="radio"] {
 
 /* 選択されたときのスタイル */
 input[type="radio"]:checked {
-  background-color: white; /* 背景色 */
+  background-color: white;
+  /* 背景色 */
   border-color: var(--primary-600);
 }
 
@@ -284,6 +288,46 @@ input[type="radio"]::before {
 input[type="radio"]:checked::before {
   transform: translate(-50%, -50%) scale(1);
 }
+
 //end ラジオボタン色変更
 
 // 共通スタイル end
+
+//start 共通スタイルレスポンシブ
+@include mq("tb") {
+  .content-width-large {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .content-width-medium {
+    width: 100%;
+    padding: 0 20px;
+    margin: 0;
+  }
+
+  .content-width-medium-small {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .medium-btn {
+    width: 240px;
+  }
+
+
+  //start 角丸背景
+  .rounded-bg {
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+  }
+
+  // end 角丸背景
+
+  .sns-button-youtube {
+    width: clamp(283px, 19.65vw, 400px);
+  }
+
+}
+
+//end 共通スタイルレスポンシブ

@@ -19,9 +19,14 @@ $font-clamp-sizes: (
   // 32pxテキストに使用
   "2xl": (24px, 2.2vw, 34px),
   // 40pxテキストに使用
-  "3xl": (30px, 2.77vw, 40px),
+  "3xl": (24px, 2.77vw, 40px),
   // 48oxテキストに使用
-  "4xl": (38px, 3.33vw, 50px)
+  "4xl": (28px, 3.33vw, 50px),
+
+  // sp
+  "sp-title24":(24px, 6.4vw, 28px),
+  "sp-title28":(28px, 7.46vw, 32px),
+  "sp-title32":(32px, 8.53vw, 40px)
 );
 
 @mixin clamp-text($size) {

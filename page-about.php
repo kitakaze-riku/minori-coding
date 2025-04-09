@@ -3,20 +3,26 @@
 <main>
   <section class="subheader">
     <img class="header-circle-yellow" src="<?php echo get_template_directory_uri(); ?>/images/header/circle_yellow.svg" alt="">
-    <img class="header-circle-big-green" src="<?php echo get_template_directory_uri(); ?>/images/header/circle_green.svg" alt="">
+    <picture class="header-circle-big-green">
+      <source srcset="<?php echo get_template_directory_uri(); ?>/images/header/sp-circle_green.svg" media="(max-width: 820px)"> <img class="header-circle-big-green" src="<?php echo get_template_directory_uri(); ?>/images/header/circle_green.svg" alt="">
+    </picture>
+    <!-- <img class="header-circle-big-green" src="<?php echo get_template_directory_uri(); ?>/images/header/circle_green.svg" alt=""> -->
     <img class="header-circle-pink" src="<?php echo get_template_directory_uri(); ?>/images/header/circle_pink.svg" alt="">
 
     <div class="subheader-content">
       <div class="subheader-content-title">
         <h2><?php the_title(); ?> </h2>
-        <img class="" src="<?php echo get_template_directory_uri(); ?>/images/header/subheader-parts1.svg" alt="実里の外観画像">
+        <img class="" src="<?php echo get_template_directory_uri(); ?>/images/header/subheader-parts1.svg" alt="">
       </div>
-      <img class="" src="<?php echo get_template_directory_uri(); ?>/images/header/about-top.jpg" alt="実里の外観画像">
+      <picture>
+        <source srcset="<?php echo get_template_directory_uri(); ?>/images/header/sp-about-top.png" media="(max-width: 820px)"> <img class="" src="<?php echo get_template_directory_uri(); ?>/images/header/about-top.png" alt="実里の外観画像">
+      </picture>
+
     </div>
     <ul class="subheader-list">
       <li>
         <img src="<?php echo get_template_directory_uri(); ?>/images/header/subheader-check.svg" alt="">
-        <a href="">ご挨拶</a>
+        <a href="">ごあいさつ</a>
       </li>
       <li>
         <img src="<?php echo get_template_directory_uri(); ?>/images/header/subheader-check.svg" alt="">
@@ -36,11 +42,11 @@
   <div class="layerbg-beige" id="greeting">
     <section class="rounded-bg white-bg">
       <div class="page-content  content-width-medium">
-      <div class="page-content-left">
-        <h2><span>ごあいさつ</span></h2>
-      </div>
+        <div class="page-content-left">
+          <h2><span>ごあいさつ</span></h2>
+        </div>
         <div class="page-content-right greeting-content-right">
-          <h3>「みんながまあるくいられる幸せ」を目指して</h3>
+          <h3><span class="br-text">「みんながまあるく</span>いられる幸せ」を目指して</h3>
 
           <p>
             赤城山麓に囲まれた自然豊かな「実里」では、皆さまに穏やかで心安らぐ時間をお過ごしいただけるよう、スタッフ一同、心を込めてお手伝いしております。<br><br>
@@ -236,7 +242,6 @@
       </div>
 
     </div>
-  </div>
 </main>
 
 <?php get_footer(); ?>

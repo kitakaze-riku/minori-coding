@@ -25,8 +25,45 @@ function theme_enqueue_styles()
 add_action('wp_enqueue_scripts', 'theme_enqueue_styles');
 
 
+// function my_theme_enqueue_scripts()
+// {
+//   // GSAPのCDNを登録
+//   wp_enqueue_script(
+//     'gsap-cdn',
+//     'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js',
+//     array(),
+//     null,
+//     true
+//   );
+
+//   // カスタムJSファイルを登録（GSAPの後に読み込む）
+//   wp_enqueue_script(
+//     'custom-script',
+//     get_template_directory_uri() . '/js/script.js',
+//     array('gsap-cdn'), // GSAPに依存
+//     null,
+//     true
+//   );
+// }
+// add_action('wp_enqueue_scripts', 'my_theme_enqueue_scripts');
+
 function my_theme_enqueue_scripts()
 {
+  // SwiperのCSSを登録
+  wp_enqueue_style(
+    'swiper-style',
+    'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css'
+  );
+
+  // SwiperのJSを登録
+  wp_enqueue_script(
+    'swiper-js',
+    'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js',
+    array(),
+    null,
+    true
+  );
+
   // GSAPのCDNを登録
   wp_enqueue_script(
     'gsap-cdn',
@@ -36,16 +73,19 @@ function my_theme_enqueue_scripts()
     true
   );
 
-  // カスタムJSファイルを登録（GSAPの後に読み込む）
+  // カスタムJSファイルを登録（GSAPとSwiperの後に読み込む）
   wp_enqueue_script(
     'custom-script',
     get_template_directory_uri() . '/js/script.js',
-    array('gsap-cdn'), // GSAPに依存
+    array('gsap-cdn', 'swiper-js'), // 依存関係にSwiperとGSAPを指定
     null,
     true
   );
 }
 add_action('wp_enqueue_scripts', 'my_theme_enqueue_scripts');
+
+
+
 
 
 function create_custom_post_types()
@@ -86,19 +126,21 @@ class Custom_Walker_Category extends Walker_Category
 
 
 //start カスタム投稿を取得
-function create_custom_post_type() {
-  register_post_type('custom_post', // カスタム投稿のスラッグ
-      array(
-          'labels'      => array(
-              'name'          => __('カスタム投稿'),
-              'singular_name' => __('カスタム投稿'),
-          ),
-          'public'      => true,
-          'has_archive' => true,
-          'supports'    => array('title', 'editor', 'thumbnail', 'excerpt', 'custom-fields'),
-          'menu_position' => 5,
-          'menu_icon'   => 'dashicons-admin-post',
-      )
+function create_custom_post_type()
+{
+  register_post_type(
+    'custom_post', // カスタム投稿のスラッグ
+    array(
+      'labels'      => array(
+        'name'          => __('カスタム投稿'),
+        'singular_name' => __('カスタム投稿'),
+      ),
+      'public'      => true,
+      'has_archive' => true,
+      'supports'    => array('title', 'editor', 'thumbnail', 'excerpt', 'custom-fields'),
+      'menu_position' => 5,
+      'menu_icon'   => 'dashicons-admin-post',
+    )
   );
 }
 add_action('init', 'create_custom_post_type');

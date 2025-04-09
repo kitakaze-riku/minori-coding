@@ -1,6 +1,21 @@
 <footer>
+
+  <div class="contact-section-padding display-sp sp-contact-bottom">
+    <div class="contact-section content-width-large">
+      <section class="contact-section-content">
+        <h3>
+          お問い合わせ
+        </h3>
+        <p>
+          <span>お問い合わせ・ご質問は</span>お電話またはメールフォームから
+        </p>
+        <a href="tel:+0279-26-3162">Tel.<span>0279-26-3162</span></a>
+        <a class="nav-btn medium-btn arrow-btn" href="/contact"><span>メールフォーム</span></a>
+      </section>
+    </div>
+  </div>
   <div class="rounded-bg beige-bg footer-padding">
-    <div class="content-width-large">
+    <div class="content-width-large sp-footer-padding">
       <div class="footer-sns-container">
         <a href="/blog">
           <p class="sp-sns-blog-text">介護への考え方や日常を発信中</p>
@@ -29,6 +44,67 @@
           </div>
           <a href="/about#access" class="nav-btn medium-btn footer-btn"><span>アクセス</span></a>
         </div>
+
+        <ul class="footer-sp-nav-container sp-footer-nav">
+          <li class="accordion">
+            <button class="accordion-btn">
+              実里について <span class="icon">+</span>
+            </button>
+            <ul class="accordion-content">
+              <li><a href="/about#vision">理念・想い</a></li>
+              <li><a href="#">ヒストリー</a></li>
+              <li><a href="#">私たちの強み</a></li>
+              <li><a href="about/#feature">目指す姿</a></li>
+              <li><a href="/about#company">施設概要</a></li>
+            </ul>
+          </li>
+          <li class="accordion">
+            <button class="accordion-btn">
+              サービス <span class="icon">+</span>
+            </button>
+            <ul class="accordion-content">
+              <li><a href="/service#facility-overview">施設紹介</a></li>
+              <li><a href="/service#">支援内容</a></li>
+              <li><a href="/service#daily">1日の流れ</a></li>
+              <li><a href="/service#staff">従業員紹介</a></li>
+            </ul>
+          </li>
+          <li class="accordion">
+            <button class="accordion-btn">
+              採用情報 <span class="icon">+</span>
+            </button>
+            <ul class="accordion-content">
+              <li><a href="/recruit#desired-person">求める人物像</a></li>
+              <li><a href="/recruit#employee-benefits">福利厚生</a></li>
+              <li><a href="/recruit#staff">先輩社員紹介</a></li>
+              <li><a href="/recruit#requirements">募集要項</a></li>
+            </ul>
+          </li>
+
+          <li class="accordion">
+            <a href="/news" class="accordion-btn">
+              お知らせ <span class="icon"> <img src="<?php echo get_template_directory_uri(); ?>/images/common/right-arrow-red-2.svg" alt=""></span>
+            </a>
+          </li>
+
+          <li class="accordion">
+            <a href="/blog" class="accordion-btn">
+              ブログ <span class="icon"> <img src="<?php echo get_template_directory_uri(); ?>/images/common/right-arrow-red-2.svg" alt=""></span>
+            </a>
+          </li>
+
+          <li class="accordion">
+            <a href="/contact" class="accordion-btn">
+              お問い合わせ <span class="icon"> <img src="<?php echo get_template_directory_uri(); ?>/images/common/right-arrow-red-2.svg" alt=""></span>
+            </a>
+          </li>
+
+        </ul>
+
+        <a href="" class="footer-banner sp-footer-nav">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/footer/img_banner.jpg" alt="">
+        </a>
+
         <div class="footer-nav">
           <div class="footer-nav-content">
             <div class="footer-nav-inner">
@@ -83,6 +159,7 @@
 
 </html>
 <!--自作のJS記述-->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 <?php wp_footer(); ?>
 </body>
 
