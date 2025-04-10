@@ -11,7 +11,9 @@
         <h2><?php the_title(); ?> </h2>
         <img class="" src="<?php echo get_template_directory_uri(); ?>/images/header/subheader-parts1.svg" alt="実里の外観画像">
       </div>
-      <img class="" src="<?php echo get_template_directory_uri(); ?>/images/common/page-contact-bg.png" alt="社員たちの様子">
+      <picture>
+        <source srcset="<?php echo get_template_directory_uri(); ?>/images/common/sp-contact.png" media="(max-width: 820px)"> <img class="" src="<?php echo get_template_directory_uri(); ?>/images/common/page-contact-bg.png" alt="社員たちの様子">
+      </picture>
     </div>
     <ul class="subheader-list">
       <li>
@@ -28,8 +30,13 @@
   <div class="layerbg-beige ">
     <section class="rounded-bg white-bg">
       <div class="page-contact content-width-medium">
-        <h2><span>メールでのお問い合わせ</span></h2>
+        <h2 class="display-pc"><span>メールでのお問い合わせ</span></h2>
 
+        <div class="content-width-medium sp-tel-detail display-sp contact-sp-title-top">
+          <div class="tel-detail-border">
+            <h2 class="tel-title"><span>メールでの <br>お問い合わせ</span></h2>
+          </div>
+        </div>
         <form class="form-content beige-bg" action="send.php" method="post">
           <!-- お問い合わせ種類（ラジオボタン） -->
           <div class="form-group">
@@ -92,34 +99,36 @@
               よろしければ「個⼈情報の取扱いについて「同意する」にチェックをして、内容を送信してください。</p>
             <div class="privacy-policy-container gray-bg">
               <h3>個⼈情報の取扱いについて</h3>
-              <div class="privacy-policy-container-text">
-                <p>株式会社XXXXXXXXX（以下「当社」といいます）は、以下のとおり個人情報保護方針を定め、個人情報保護の仕組みを構築し、全従業員に個人情報保護の重要性の認識と取組みを徹底させることにより、個人情報の保護を推進致します。</p>
-                <h4>1. プライバシーポリシーの適用範囲</h4>
-                <p>プライバシーポリシーは、このウェブサイト（以下、当サイトを含むサイト）のみに適用されます。</p>
-                <h4>2. 個人情報の管理</h4>
-                <p>当社は、お客様の個人情報を正確かつ最新の状態に保ち、個人情報への不正アクセス・紛失・破損・改ざん・漏洩などを防止するため、セキュリティシステムの維持・管理体制の整備・社員教育の徹底等の必要な措置を講じ、安全対策を実施し個人情報の厳重な管理を行ないます。</p>
-                <h4>3. 個人情報の利用目的</h4>
-                <p>お客様からお預かりした個人情報は、当社からのご連絡や業務のご案内やご質問に対する回答として、電子メールや資料のご送付に利用いたします。</p>
-                <h4>4. 個人情報の第三者への開示・提供の禁止</h4>
-                <p>当社は、お客様よりお預かりした個人情報を適切に管理し、次のいずれかに該当する場合を除き、個人情報を第三者に開示いたしません。</p>
-                <ul>
-                  <li>お客様の同意がある場合</li>
-                  <li>お客様が希望されるサービスを行なうために当社が業務を委託する業者に対して開示する場合</li>
-                  <li>法令に基づき開示することが必要である場合</li>
-                </ul>
-                <h4>5. 個人情報の安全対策</h4>
-                <p>当社は、個人情報の正確性及び安全性確保のために、セキュリティに万全の対策を講じています。</p>
-                <h4>6. ご本人の照会</h4>
-                <p>お客様がご本人の個人情報の照会・修正・削除などをご希望される場合には、ご本人であることを確認の上、対応させていただきます。</p>
-                <h4>7. 法令、規範の遵守と見直し</h4>
-                <p>当社は、保有する個人情報に関して適用される日本の法令、その他規範を遵守するとともに、本ポリシーの内容を適宜見直し、その改善に努めます。</p>
-                <p>代表取締役社長　丸々　丸々</p>
-                <h4>お問い合わせ</h4>
-                <p>当社の個人情報の取扱に関するお問い合せは下記までご連絡ください。</p>
-                <p>株式会社〇〇</p>
-                <p>〒012-3456　丸々県丸々市丸々町012-345（本社）</p>
-                <p>TEL：0123-456-7890　FAX : 0123-456-7890</p>
-                <p>E-mail：XXX@aaa.bb</p>
+              <div class="privacy-policy-container-inner">
+                <div class="privacy-policy-container-text">
+                  <p>株式会社XXXXXXXXX（以下「当社」といいます）は、以下のとおり個人情報保護方針を定め、個人情報保護の仕組みを構築し、全従業員に個人情報保護の重要性の認識と取組みを徹底させることにより、個人情報の保護を推進致します。</p>
+                  <h4>1. プライバシーポリシーの適用範囲</h4>
+                  <p>プライバシーポリシーは、このウェブサイト（以下、当サイトを含むサイト）のみに適用されます。</p>
+                  <h4>2. 個人情報の管理</h4>
+                  <p>当社は、お客様の個人情報を正確かつ最新の状態に保ち、個人情報への不正アクセス・紛失・破損・改ざん・漏洩などを防止するため、セキュリティシステムの維持・管理体制の整備・社員教育の徹底等の必要な措置を講じ、安全対策を実施し個人情報の厳重な管理を行ないます。</p>
+                  <h4>3. 個人情報の利用目的</h4>
+                  <p>お客様からお預かりした個人情報は、当社からのご連絡や業務のご案内やご質問に対する回答として、電子メールや資料のご送付に利用いたします。</p>
+                  <h4>4. 個人情報の第三者への開示・提供の禁止</h4>
+                  <p>当社は、お客様よりお預かりした個人情報を適切に管理し、次のいずれかに該当する場合を除き、個人情報を第三者に開示いたしません。</p>
+                  <ul>
+                    <li>お客様の同意がある場合</li>
+                    <li>お客様が希望されるサービスを行なうために当社が業務を委託する業者に対して開示する場合</li>
+                    <li>法令に基づき開示することが必要である場合</li>
+                  </ul>
+                  <h4>5. 個人情報の安全対策</h4>
+                  <p>当社は、個人情報の正確性及び安全性確保のために、セキュリティに万全の対策を講じています。</p>
+                  <h4>6. ご本人の照会</h4>
+                  <p>お客様がご本人の個人情報の照会・修正・削除などをご希望される場合には、ご本人であることを確認の上、対応させていただきます。</p>
+                  <h4>7. 法令、規範の遵守と見直し</h4>
+                  <p>当社は、保有する個人情報に関して適用される日本の法令、その他規範を遵守するとともに、本ポリシーの内容を適宜見直し、その改善に努めます。</p>
+                  <p>代表取締役社長　丸々　丸々</p>
+                  <h4>お問い合わせ</h4>
+                  <p>当社の個人情報の取扱に関するお問い合せは下記までご連絡ください。</p>
+                  <p>株式会社〇〇</p>
+                  <p>〒012-3456　丸々県丸々市丸々町012-345（本社）</p>
+                  <p>TEL：0123-456-7890　FAX : 0123-456-7890</p>
+                  <p>E-mail：XXX@aaa.bb</p>
+                </div>
               </div>
             </div>
 
@@ -145,10 +154,20 @@
 
 
 
-  <div class="page-contact content-width-medium">
+  <div class="page-contact content-width-medium display-pc flex-direction">
     <h2><span>電話でのお問い合わせ</span></h2>
     <div class="tel-detail layerbg-beige-blend">
       <p>お急ぎの場合はお電話でお問い合わせください。</p>
+      <a href="tel:+0279-26-3162"><span>Tel.</span>0279-26-3162</a>
+    </div>
+  </div>
+
+  <div class="content-width-medium sp-tel-detail display-sp sp-tel-top">
+    <div class="tel-detail-border">
+      <h2 class="tel-title"><span>電話での <br>お問い合わせ</span></h2>
+    </div>
+    <div class="tel-detail layerbg-beige-blend">
+      <p>お問い合わせ・ご質問は<br>お電話またはメールフォームから</p>
       <a href="tel:+0279-26-3162"><span>Tel.</span>0279-26-3162</a>
     </div>
   </div>

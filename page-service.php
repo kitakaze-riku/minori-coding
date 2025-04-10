@@ -11,7 +11,10 @@
         <h2><?php the_title(); ?> </h2>
         <img class="" src="<?php echo get_template_directory_uri(); ?>/images/header/subheader-parts1.svg" alt="実里の外観画像">
       </div>
-      <img class="" src="<?php echo get_template_directory_uri(); ?>/images/header/page-service1.jpg" alt="実里のサービス風景">
+
+      <picture>
+        <source srcset="<?php echo get_template_directory_uri(); ?>/images/header/sp-page-service1.png" media="(max-width: 820px)"> <img class="" src="<?php echo get_template_directory_uri(); ?>/images/header/page-service1.png" alt="実里のサービス風景">
+      </picture>
     </div>
     <ul class="subheader-list service-list">
       <li>
@@ -320,7 +323,7 @@
 
               <div>
                 <h3> 利用者様とご家族に寄り添い続けて11年 </h3>
-                <p>狩野さん／相談員（勤務年数：11年目） </p>
+                <p><span class="br-text">狩野さん／</span>相談員（勤務年数：11年目） </p>
               </div>
             </div>
             <div class="staff-detail">

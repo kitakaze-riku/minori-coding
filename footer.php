@@ -1,19 +1,30 @@
 <footer>
 
-  <div class="contact-section-padding display-sp sp-contact-bottom">
-    <div class="contact-section content-width-large">
-      <section class="contact-section-content">
-        <h3>
-          お問い合わせ
-        </h3>
-        <p>
-          <span>お問い合わせ・ご質問は</span>お電話またはメールフォームから
-        </p>
-        <a href="tel:+0279-26-3162">Tel.<span>0279-26-3162</span></a>
-        <a class="nav-btn medium-btn arrow-btn" href="/contact"><span>メールフォーム</span></a>
-      </section>
+  <?php
+  // contact, blog, news のページでなければ表示
+  if (
+    !is_page('contact') &&
+    !is_page('confirm') &&
+    !is_page('thanks') &&
+    !is_page('blog') &&
+    !is_post_type_archive('news') &&
+    !is_singular('news')
+  ) :
+  ?>
+    <div class="contact-section-padding display-sp sp-contact-bottom">
+      <div class="contact-section content-width-large">
+        <section class="contact-section-content">
+          <h3>お問い合わせ</h3>
+          <p>
+            <span>お問い合わせ・ご質問は</span>お電話またはメールフォームから
+          </p>
+          <a href="tel:+0279-26-3162">Tel.<span>0279-26-3162</span></a>
+          <a class="nav-btn medium-btn arrow-btn" href="/contact"><span>メールフォーム</span></a>
+        </section>
+      </div>
     </div>
-  </div>
+  <?php endif; ?>
+
   <div class="rounded-bg beige-bg footer-padding">
     <div class="content-width-large sp-footer-padding">
       <div class="footer-sns-container">

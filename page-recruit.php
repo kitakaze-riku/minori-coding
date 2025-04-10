@@ -11,7 +11,9 @@
         <h2><?php the_title(); ?> </h2>
         <img class="" src="<?php echo get_template_directory_uri(); ?>/images/header/subheader-parts1.svg" alt="実里の外観画像">
       </div>
-      <img class="" src="<?php echo get_template_directory_uri(); ?>/images/header/recruit-top.jpg" alt="社員たちの様子">
+      <picture>
+        <source srcset="<?php echo get_template_directory_uri(); ?>/images/header/sp-recruit-top.png" media="(max-width: 820px)"> <img class="" src="<?php echo get_template_directory_uri(); ?>/images/header/recruit-top.png" alt="社員たちの様子">
+      </picture>
     </div>
     <ul class="subheader-list">
       <li>
@@ -108,8 +110,8 @@
             <p>
               「誰かの助けになりたい」<br>
               「利用者様の笑顔を見たい」<br>
-              という気持ちがあれば、私たちは全力であなたをサポートします。<br>
-              スタッフ同士が支え合い、笑顔が絶えない職場で一緒に働きませんか？
+              <span class="br-text">という気持ちがあれば、</span> <span class="br-text">私たちは全力であなたを</span>サポートします。<br>
+              <span class="br-text">スタッフ同士が支え合い、</span> 笑顔が絶えない職場で一緒に働きませんか？
             </p>
             <img class="desired-person-vision-img1" src="<?php echo get_template_directory_uri(); ?>/images/main/recruit/circle1.png" alt="">
             <img class="desired-person-vision-img2" src="<?php echo get_template_directory_uri(); ?>/images/main/recruit/circle2.png" alt="">
@@ -133,7 +135,7 @@
 
               <div>
                 <h3> 温かい環境で利用者様に寄り添う日々 </h3>
-                <p>萩原さん ／ 看護職員（勤務年数：5年目） </p>
+                <p><span class="br-text">萩原さん ／</span> 看護職員（勤務年数：5年目） </p>
               </div>
             </div>
             <div class="staff-detail">
