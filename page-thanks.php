@@ -9,10 +9,10 @@
     <div class="subheader-content contact-page-top">
       <div class="subheader-content-title">
         <h2><?php the_title(); ?> </h2>
-        <img class="" src="<?php echo get_template_directory_uri(); ?>/images/header/subheader-parts1.svg" alt="実里の外観画像">
+        <img class="" src="<?php echo get_template_directory_uri(); ?>/images/header/subheader-parts1.svg" alt="">
       </div>
       <picture>
-        <source srcset="<?php echo get_template_directory_uri(); ?>/images/common/sp-contact.png" media="(max-width: 820px)"> <img class="" src="<?php echo get_template_directory_uri(); ?>/images/common/page-contact-bg.png" alt="社員たちの様子">
+        <source srcset="<?php echo get_template_directory_uri(); ?>/images/common/sp-contact.png" media="(max-width: 820px)"> <img class="" src="<?php echo get_template_directory_uri(); ?>/images/common/page-contact-bg.png" alt="サンクスページ｜りんちゃん写真">
       </picture>
     </div>
   </section>

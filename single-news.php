@@ -36,12 +36,12 @@
             $category_slugs_text = implode(', ', $category_slugs);
             ?>
 
-            <article class="single-post single-news">
+            <article class="single-post-content single-news">
               <div class="">
                 <div class="blog-category-data">
                   <p class="blog-date"><?php echo get_the_date('Y.m.d'); ?></p>
                 </div>
-                <h2><?php the_title(); ?></h2>
+                <h2 class=""><?php the_title(); ?></h2>
                 <div class="post-content">
                   <?php the_content(); ?>
                 </div>

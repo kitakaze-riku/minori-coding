@@ -9,10 +9,10 @@
     <div class="subheader-content contact-page-top">
       <div class="subheader-content-title">
         <h2><?php the_title(); ?> </h2>
-        <img class="" src="<?php echo get_template_directory_uri(); ?>/images/header/subheader-parts1.svg" alt="実里の外観画像">
+        <img class="" src="<?php echo get_template_directory_uri(); ?>/images/header/subheader-parts1.svg" alt="">
       </div>
       <picture>
-        <source srcset="<?php echo get_template_directory_uri(); ?>/images/common/sp-contact.png" media="(max-width: 820px)"> <img class="" src="<?php echo get_template_directory_uri(); ?>/images/common/page-contact-bg.png" alt="社員たちの様子">
+        <source srcset="<?php echo get_template_directory_uri(); ?>/images/common/sp-contact.png" media="(max-width: 820px)"> <img class="" src="<?php echo get_template_directory_uri(); ?>/images/common/page-contact-bg.png" alt="お問合せ内容確認画面｜りんちゃんの写真">
       </picture>
     </div>
 
@@ -23,8 +23,7 @@
       <div class="page-contact content-width-medium ">
         <h2><span>送信内容のご確認</span></h2>
 
-        <form class="form-content beige-bg" action="confirm.php" method="post">
-          <!-- お問い合わせ種類（ラジオボタン） -->
+        <!-- <form class="form-content beige-bg" action="confirm.php" method="post">
           <div class="form-group form-confirm-group">
             <label>お問い合わせ種類</label>
             <div>
@@ -32,7 +31,6 @@
             </div>
           </div>
 
-          <!-- お名前 -->
           <div class="form-group form-confirm-group">
             <label>お名前</label>
             <div>
@@ -40,28 +38,24 @@
             </div>
           </div>
 
-          <!-- ふりがな -->
           <div class="form-group form-confirm-group">
             <label>ふりがな</label>
             <div>
               みょうじ　なまえ
             </div>
           </div>
-          <!-- ふりがな -->
           <div class="form-group form-confirm-group">
             <label>電話番号</label>
             <div>
               012-3456-7890
             </div>
           </div>
-          <!-- ふりがな -->
           <div class="form-group form-confirm-group">
             <label>メールアドレス</label>
             <div>
               example@example.com
             </div>
           </div>
-          <!-- ふりがな -->
           <div class="form-group form-confirm-group">
             <label>ご住所</label>
             <div>
@@ -69,7 +63,6 @@
             </div>
           </div>
 
-          <!-- ふりがな -->
           <div class="form-group form-confirm-group">
             <label>お問い合わせ内容</label>
             <div>
@@ -77,7 +70,6 @@
             </div>
           </div>
 
-          <!-- ふりがな -->
           <div class="form-group form-confirm-group">
             <label>個人情報の取り扱い</label>
             <div>
@@ -85,9 +77,9 @@
             </div>
           </div>
 
-          <!-- 送信ボタン -->
           <button class="nav-btn medium-btn arrow-btn-bg-white contact-btn form-confirm-group-btn" type="submit"><span>送信する</span></button>
-        </form>
+        </form> -->
+        <?php echo do_shortcode('[contact-form-7 id="dbe2f5e" title="確認画面"]'); ?>
 
       </div>
     </section>

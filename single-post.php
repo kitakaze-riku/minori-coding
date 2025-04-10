@@ -18,7 +18,7 @@
 
   <div class="layerbg-beige ">
     <section class="rounded-bg white-bg post-directory">
-      <div class="content-width-medium blog-content-wrap">
+      <div class="content-width-medium blog-content-wrap single-post-wrap">
         <div class="article-container">
           <article>
             <?php
@@ -36,7 +36,7 @@
             $category_slugs_text = implode(', ', $category_slugs);
             ?>
 
-            <article class="single-post">
+            <article class="single-post-content">
               <div class="single-post-size">
                 <div class="blog-category-data">
                   <div class="blog-category">

@@ -15,7 +15,7 @@
         <img class="" src="<?php echo get_template_directory_uri(); ?>/images/header/subheader-parts1.svg" alt="">
       </div>
       <picture>
-        <source srcset="<?php echo get_template_directory_uri(); ?>/images/header/sp-about-top.png" media="(max-width: 820px)"> <img class="" src="<?php echo get_template_directory_uri(); ?>/images/header/about-top.png" alt="実里の外観画像">
+        <source srcset="<?php echo get_template_directory_uri(); ?>/images/header/sp-about-top.png" media="(max-width: 820px)"> <img src="<?php echo get_template_directory_uri(); ?>/images/header/about-top.png" alt="実里の外観">
       </picture>
 
     </div>
@@ -237,7 +237,7 @@
     <div class="rounded-bg slider">
       <div class="slider-wrap">
         <div class="slider-track">
-          <img class="slider-track-item" src="<?php echo get_template_directory_uri(); ?>/images/main/slide/slider.png" alt="" />
+          <img class="slider-track-item" src="<?php echo get_template_directory_uri(); ?>/images/main/slide/slider.png" alt="サービス・施設の様子・実里の小さな家族たちのギャラリー" />
         </div>
       </div>
 

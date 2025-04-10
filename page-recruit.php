@@ -12,7 +12,7 @@
         <img class="" src="<?php echo get_template_directory_uri(); ?>/images/header/subheader-parts1.svg" alt="実里の外観画像">
       </div>
       <picture>
-        <source srcset="<?php echo get_template_directory_uri(); ?>/images/header/sp-recruit-top.png" media="(max-width: 820px)"> <img class="" src="<?php echo get_template_directory_uri(); ?>/images/header/recruit-top.png" alt="社員たちの様子">
+        <source srcset="<?php echo get_template_directory_uri(); ?>/images/header/sp-recruit-top.png" media="(max-width: 820px)"> <img class="" src="<?php echo get_template_directory_uri(); ?>/images/header/recruit-top.png" alt="スタッフが笑顔で話している様子">
       </picture>
     </div>
     <ul class="subheader-list">
@@ -53,7 +53,7 @@
             心に寄り添う介護で、誰かの人生を豊かにするお手伝いを、私たちと一緒に始めてみませんか？
           </p>
 
-          <img class="recruit-message" src="<?php echo get_template_directory_uri(); ?>/images/main/recruit/message.jpg" alt="">
+          <img class="recruit-message" src="<?php echo get_template_directory_uri(); ?>/images/main/recruit/message.jpg" alt="サービス風景｜体操を行っている様子">
         </div>
       </div>
     </section>
@@ -70,7 +70,7 @@
 
           <div class="desired-person">
             <div class="desired-person-item">
-              <img src="<?php echo get_template_directory_uri(); ?>/images/main/recruit/desired-person1.svg" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/main/recruit/desired-person1.svg" alt="車椅子を押す人のイラスト">
 
               <h3>介護を楽しめる方</h3>
               <p>
@@ -78,7 +78,7 @@
               </p>
             </div>
             <div class="desired-person-item">
-              <img src="<?php echo get_template_directory_uri(); ?>/images/main/recruit/desired-person2.svg" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/main/recruit/desired-person2.svg" alt="話し合いを行う人々のイラスト">
 
               <h3>介護に迷いや不安を <br>感じている方</h3>
               <p>
@@ -87,7 +87,7 @@
             </div>
 
             <div class="desired-person-item">
-              <img src="<?php echo get_template_directory_uri(); ?>/images/main/recruit/desired-person3.svg" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/main/recruit/desired-person3.svg" alt="ベビーカーに乗る赤ちゃんのイラスト">
 
               <h3>子育てと <br>両立したい方</h3>
               <p>
@@ -96,7 +96,7 @@
             </div>
 
             <div class="desired-person-item">
-              <img src="<?php echo get_template_directory_uri(); ?>/images/main/recruit/desired-person4.svg" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/main/recruit/desired-person4.svg" alt="ハイタッチしている人たちのイラスト">
 
               <h3>年齢を問わず<br>挑戦したい方</h3>
               <p>
@@ -131,7 +131,7 @@
         <div class="page-content-right">
           <div class="staff">
             <div class="staff-profile pink-bg">
-              <img src="<?php echo get_template_directory_uri(); ?>/images/main/recruit/staff.png" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/main/recruit/staff.png" alt="萩原さん ／ 看護職員のプロフィール写真">
 
               <div>
                 <h3> 温かい環境で利用者様に寄り添う日々 </h3>

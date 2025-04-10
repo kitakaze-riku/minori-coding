@@ -6,10 +6,12 @@
     !is_page('contact') &&
     !is_page('confirm') &&
     !is_page('thanks') &&
-    !is_page('blog') &&
+    !is_home() && // ← ブログ一覧
+    !is_singular('post') && // ← ブログ記事ページ
     !is_post_type_archive('news') &&
-    !is_singular('news')
-  ) :
+    !is_singular('news') &&
+    !is_front_page() // ← トップページも除外
+  ):
   ?>
     <div class="contact-section-padding display-sp sp-contact-bottom">
       <div class="contact-section content-width-large">
@@ -30,22 +32,22 @@
       <div class="footer-sns-container">
         <a href="/blog">
           <p class="sp-sns-blog-text">介護への考え方や日常を発信中</p>
-          <h4><img src="<?php echo get_template_directory_uri(); ?>/images/common/blog.svg" alt=""><span>blog</span></h4>
+          <h4><img src="<?php echo get_template_directory_uri(); ?>/images/common/blog.svg" alt="ブログアイコン"><span>blog</span></h4>
         </a>
         <a href="">
           <p class="sp-sns-insta-text">利用者様との思い出を写真でシェア</p>
-          <h4><img src="<?php echo get_template_directory_uri(); ?>/images/common/instagram.svg" alt=""><span>Instagram</span></h4>
+          <h4><img src="<?php echo get_template_directory_uri(); ?>/images/common/instagram.svg" alt="Instagramロゴ"><span>Instagram</span></h4>
         </a>
         <a href="">
           <p class="sp-sns-youtube-text">施設の日常を動画で配信中</p>
-          <h4><img src="<?php echo get_template_directory_uri(); ?>/images/common/youtube.svg" alt=""><span>Youtube</span></h4>
+          <h4><img src="<?php echo get_template_directory_uri(); ?>/images/common/youtube.svg" alt="Youtubeロゴ"><span>Youtube</span></h4>
         </a>
       </div>
 
       <div class="footer-container">
 
         <div class="footer-contact">
-          <img src="<?php echo get_template_directory_uri(); ?>/images/common/logo-minori.svg" alt="実里・ほほえみ">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/common/logo-minori.svg" alt="実里ロゴ">
           <p class="footer-contact-title">住宅型有料老人ホーム 実里<br>
             デイサービス実里</p>
           <p class="footer-contact-addr">群馬県渋川市赤城町津久田266-2</p>
@@ -156,7 +158,7 @@
             </div>
           </div>
           <a href="" class="footer-banner">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/footer/img_banner.jpg" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/footer/img_banner.jpg" alt="ほほえみサイトへ移動します">
           </a>
         </div>
       </div>

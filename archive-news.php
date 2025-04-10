@@ -31,7 +31,7 @@ $custom_query = new WP_Query($args);
 
   <div class="layerbg-beige ">
     <section class="rounded-bg white-bg post-directory">
-      <div class="content-width-medium">
+      <div class="content-width-medium single-post-wrap">
         <div class="article-container-news">
           <?php if ($custom_query->have_posts()) : ?>
             <?php while ($custom_query->have_posts()) : $custom_query->the_post(); ?>
@@ -53,7 +53,7 @@ $custom_query = new WP_Query($args);
             echo paginate_links(array(
               'total'        => $custom_query->max_num_pages,
               'current'      => max(1, get_query_var('paged')),
-              'mid_size'     => 2, // 現在のページの前後に1つずつ表示
+              'mid_size'     => 1, // 現在のページの前後に1つずつ表示
               'end_size'     => 1, // 最初と最後のページを1つずつ表示
               'prev_text'    => '<img src="' . get_template_directory_uri() . '/images/common/left-arrow-red.svg" alt="前へ">',
               'next_text'    => '<img src="' . get_template_directory_uri() . '/images/common/right-arrow-red-2.svg" alt="次へ">',

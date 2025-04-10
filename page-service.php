@@ -13,7 +13,7 @@
       </div>
 
       <picture>
-        <source srcset="<?php echo get_template_directory_uri(); ?>/images/header/sp-page-service1.png" media="(max-width: 820px)"> <img class="" src="<?php echo get_template_directory_uri(); ?>/images/header/page-service1.png" alt="実里のサービス風景">
+        <source srcset="<?php echo get_template_directory_uri(); ?>/images/header/sp-page-service1.png" media="(max-width: 820px)"> <img class="" src="<?php echo get_template_directory_uri(); ?>/images/header/page-service1.png" alt="サービス風景">
       </picture>
     </div>
     <ul class="subheader-list service-list">
@@ -55,12 +55,12 @@
 
           <div class="business-introduction-content">
             <div>
-              <img src="<?php echo get_template_directory_uri(); ?>/images/main/service/top-commitment1.jpg" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/main/service/top-commitment1.jpg" alt="住宅型有料老人ホーム実里｜食事の様子">
               <h4>住宅型有料老人ホーム 実里 </h4>
               <p>高齢者の自立と尊厳を大切にし、安心できる「わが家」のような暮らしを提供します。</p>
             </div>
             <div>
-              <img src="<?php echo get_template_directory_uri(); ?>/images/main/service/daily3.jpg" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/main/service/daily3.jpg" alt="デイサービス 実里｜レクリエーションの様子">
               <h4>デイサービス 実里 </h4>
               <p>ご自宅での生活を続けたい高齢者をサポートするための在宅支援サービスです</p>
             </div>
@@ -88,7 +88,7 @@
                 </p>
               </div>
               <div class="commitment-item-right">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/main/service/commitment1.jpg" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/main/service/commitment1.jpg" alt="サービスの風景">
               </div>
             </div>
             <div class="commitment-item">
@@ -99,7 +99,7 @@
                 </p>
               </div>
               <div class="commitment-item-right">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/main/service/commitment2.jpg" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/main/service/commitment2.jpg" alt="食事を作っている風景">
               </div>
             </div>
             <div class="commitment-item">
@@ -110,7 +110,7 @@
                 </p>
               </div>
               <div class="commitment-item-right">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/main/service/commitment3.jpg" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/main/service/commitment3.jpg" alt="レクリエーション風景">
               </div>
             </div>
             <div class="commitment-item">
@@ -121,7 +121,7 @@
                 </p>
               </div>
               <div class="commitment-item-right">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/main/service/commitment4.jpg" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/main/service/commitment4.jpg" alt="実里の看板犬たち">
               </div>
             </div>
           </div>
@@ -147,12 +147,12 @@
 
               <div class="facility-overview-item">
                 <div class="">
-                  <img src="<?php echo get_template_directory_uri(); ?>/images/main/service/service-detail1.jpg" alt="">
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/main/service/service-detail1.jpg" alt="リビングルーム">
                   <h3>リビングルーム</h3>
                   <p>中庭からの陽当たりがよく、広々とした空間でお食事や休憩などのんびりと過ごせます。</p>
                 </div>
                 <div class="">
-                  <img src="<?php echo get_template_directory_uri(); ?>/images/main/service/service-detail2.jpg" alt="">
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/main/service/service-detail2.jpg" alt="ドッグラン風景">
                   <h3>ドッグラン</h3>
                   <p>広々としたドッグランに４匹のワンちゃんが遊んでいます。地域の人々や子供達も遊びに来ます。</p>
                 </div>
@@ -160,12 +160,12 @@
 
               <div class="facility-overview-item">
                 <div>
-                  <img src="<?php echo get_template_directory_uri(); ?>/images/main/service/service-detail3.jpg" alt="">
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/main/service/service-detail3.jpg" alt="個室">
                   <h3>個室</h3>
                   <p>お好きな家具家電、カーテンなど持ち込み可能です！おウチと同じように過ごしていただけます。</p>
                 </div>
                 <div>
-                  <img src="<?php echo get_template_directory_uri(); ?>/images/main/service/service-detail4.jpg" alt="">
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/main/service/service-detail4.jpg" alt="リゾート感のある中庭">
                   <h3>中庭</h3>
                   <p>全部屋から陽が当たるように施設の中央に位置しているリゾート感がある中庭です。</p>
                 </div>
@@ -174,12 +174,12 @@
               <div class="facility-overview-item">
 
                 <div>
-                  <img src="<?php echo get_template_directory_uri(); ?>/images/main/service/service-detail5.jpg" alt="">
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/main/service/service-detail5.jpg" alt="浴室">
                   <h3>浴室</h3>
                   <p>衛生面、安全面に配慮した設計で、なるべく自分でできるように手すりを配置しています。</p>
                 </div>
                 <div>
-                  <img src="<?php echo get_template_directory_uri(); ?>/images/main/service/service-detail6.jpg" alt="">
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/main/service/service-detail6.jpg" alt="廊下">
                   <h3>廊下</h3>
                   <p>広々とした開放感のある廊下。高い天井を斜めにデザインされていてホテルのような廊下です。</p>
                 </div>
@@ -187,12 +187,12 @@
 
               <div class="facility-overview-item">
                 <div>
-                  <img src="<?php echo get_template_directory_uri(); ?>/images/main/service/service-detail7.jpg" alt="">
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/main/service/service-detail7.jpg" alt="脱衣所">
                   <h3>脱衣所</h3>
                   <p>プライバシーに配慮した、カーテンの配置で安心してご入浴できます。</p>
                 </div>
                 <div>
-                  <img src="<?php echo get_template_directory_uri(); ?>/images/main/service/service-detail8.jpg" alt="">
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/main/service/service-detail8.jpg" alt="トイレ">
                   <h3>トイレ</h3>
                   <p>広い入口でゆったりとしたトイレ。常に綺麗に清潔に保たれています。</p>
                 </div>
@@ -299,12 +299,12 @@
           </div>
         </div>
         <div class="daily-gallery">
-          <img src="<?php echo get_template_directory_uri(); ?>/images/main/service/daily1.jpg" alt="">
-          <img src="<?php echo get_template_directory_uri(); ?>/images/main/service/daily2.jpg" alt="">
-          <img src="<?php echo get_template_directory_uri(); ?>/images/main/service/daily3.jpg" alt="">
-          <img src="<?php echo get_template_directory_uri(); ?>/images/main/service/daily4.jpg" alt="">
-          <img src="<?php echo get_template_directory_uri(); ?>/images/main/service/daily5.jpg" alt="">
-          <img src="<?php echo get_template_directory_uri(); ?>/images/main/service/daily6.jpg" alt="">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/main/service/daily1.jpg" alt="サービスの様子">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/main/service/daily2.jpg" alt="食事の様子">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/main/service/daily3.jpg" alt="レクリエーションの様子">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/main/service/daily4.jpg" alt="食事を作る様子">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/main/service/daily5.jpg" alt="レクリエーションの様子">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/main/service/daily6.jpg" alt="食事の様子">
         </div>
       </div>
     </div>
@@ -319,7 +319,7 @@
         <div class="page-content-right">
           <div class="staff">
             <div class="staff-profile pink-bg">
-              <img src="<?php echo get_template_directory_uri(); ?>/images/main/service/staff.png" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/main/service/staff.png" alt="相談員/狩野さんのプロフィール画像">
 
               <div>
                 <h3> 利用者様とご家族に寄り添い続けて11年 </h3>

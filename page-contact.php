@@ -9,10 +9,10 @@
     <div class="subheader-content">
       <div class="subheader-content-title">
         <h2><?php the_title(); ?> </h2>
-        <img class="" src="<?php echo get_template_directory_uri(); ?>/images/header/subheader-parts1.svg" alt="実里の外観画像">
+        <img class="" src="<?php echo get_template_directory_uri(); ?>/images/header/subheader-parts1.svg" alt="">
       </div>
       <picture>
-        <source srcset="<?php echo get_template_directory_uri(); ?>/images/common/sp-contact.png" media="(max-width: 820px)"> <img class="" src="<?php echo get_template_directory_uri(); ?>/images/common/page-contact-bg.png" alt="社員たちの様子">
+        <source srcset="<?php echo get_template_directory_uri(); ?>/images/common/sp-contact.png" media="(max-width: 820px)"> <img class="" src="<?php echo get_template_directory_uri(); ?>/images/common/page-contact-bg.png" alt="お問合せ画面｜りんちゃんの写真">
       </picture>
     </div>
     <ul class="subheader-list">
@@ -37,8 +37,7 @@
             <h2 class="tel-title"><span>メールでの <br>お問い合わせ</span></h2>
           </div>
         </div>
-        <form class="form-content beige-bg" action="send.php" method="post">
-          <!-- お問い合わせ種類（ラジオボタン） -->
+        <!-- <form class="form-content beige-bg" action="send.php" method="post">
           <div class="form-group">
             <label class="required form-label">お問い合わせ種類</label>
             <div class="radio-group">
@@ -59,37 +58,31 @@
             </div>
           </div>
 
-          <!-- お名前 -->
           <div class="form-group">
             <label class="required form-label" for="name">お名前</label>
             <input type="text" id="name" name="name" required>
           </div>
 
-          <!-- ふりがな -->
           <div class="form-group">
             <label class="required form-label" for="furigana">ふりがな</label>
             <input type="text" id="furigana" name="furigana" required>
           </div>
 
-          <!-- 電話番号 -->
           <div class="form-group">
             <label class="required form-label" for="phone">電話番号</label>
             <input type="tel" id="phone" name="phone" required>
           </div>
 
-          <!-- メールアドレス -->
           <div class="form-group">
             <label class="required form-label" for="email">メールアドレス</label>
             <input type="email" id="email" name="email" required>
           </div>
 
-          <!-- ご住所（任意） -->
           <div class="form-group">
             <label class="form-label optional" for="address">ご住所</label>
             <input type="text" id="address" name="address">
           </div>
 
-          <!-- お問い合わせ内容 -->
           <div class="form-group">
             <label class="required form-label" for="message">お問い合わせ内容</label>
             <textarea id="message" name="message" rows="5" required></textarea>
@@ -134,7 +127,6 @@
 
           </div>
 
-          <!-- 個人情報取り扱い同意チェック -->
           <div class="form-group checkbox-group">
             <input type="checkbox" id="privacy" name="privacy" required>
             <label for="privacy">個人情報の取り扱いについて同意いたします。</label>
@@ -142,11 +134,11 @@
 
 
 
-          <!-- 送信ボタン -->
           <button class="nav-btn medium-btn arrow-btn-bg-white contact-btn" type="submit"><span>送信確認画面へ</span></button>
 
 
-        </form>
+        </form> -->
+        <?php echo do_shortcode('[contact-form-7 id="bfc99a2" title="お問い合わせ"]'); ?>
 
       </div>
     </section>
@@ -162,7 +154,7 @@
     </div>
   </div>
 
-  <div class="content-width-medium sp-tel-detail display-sp sp-tel-top">
+  <div class="content-width-medium sp-tel-detail display-sp contact-sp-tel-top">
     <div class="tel-detail-border">
       <h2 class="tel-title"><span>電話での <br>お問い合わせ</span></h2>
     </div>

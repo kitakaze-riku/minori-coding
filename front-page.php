@@ -3,10 +3,10 @@
 <main>
   <section class="main-about">
     <picture>
-      <source srcset="<?php echo get_template_directory_uri(); ?>/images/main/sp-main-side2.png" media="(max-width: 820px)"> <img class="main-side1" src="<?php echo get_template_directory_uri(); ?>/images/main/main-side1.png" alt="デイサービス 実里のサービス画像">
+      <source srcset="<?php echo get_template_directory_uri(); ?>/images/main/sp-main-side2.png" media="(max-width: 820px)"> <img class="main-side1" src="<?php echo get_template_directory_uri(); ?>/images/main/main-side1.png" alt="サービスや施設風景">
     </picture>
     <picture>
-      <source srcset="<?php echo get_template_directory_uri(); ?>/images/main/sp-main-side1.png" media="(max-width: 820px)"> <img class="main-side2" src="<?php echo get_template_directory_uri(); ?>/images/main/main-side2.png" alt="デイサービス 実里のサービス画像">
+      <source srcset="<?php echo get_template_directory_uri(); ?>/images/main/sp-main-side1.png" media="(max-width: 820px)"> <img class="main-side2" src="<?php echo get_template_directory_uri(); ?>/images/main/main-side2.png" alt="サービスや施設風景">
     </picture>
 
     <div class="main-about-content">
@@ -53,19 +53,19 @@
 
     <div class="main-service-content-right">
       <section class="main-service-content-left-item1">
-        <img src="<?php echo get_template_directory_uri(); ?>/images/main/service1.jpg" alt="住宅型有料老人ホーム 実里のサービス画像">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/main/service1.jpg" alt="住宅型有料老人ホーム 実里の風景">
         <h3>住宅型有料老人ホーム 実里</h3>
         <p> 赤城山麓の自然に囲まれた住宅型有料老人ホームです。自立を重視した生活支援と季節の行事で、心豊かな毎日をお届けします。</p>
       </section>
 
       <section class="main-service-content-left-item2">
-        <img src="<?php echo get_template_directory_uri(); ?>/images/main/service2.jpg" alt="デイサービス 実里のサービス画像">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/main/service2.jpg" alt="デイサービス デイサービス実里の風景">
         <h3>デイサービス 実里</h3>
         <p>住み慣れた地域での暮らしを支える日帰りサービスです。送迎、食事、入浴に加え、個別ケアや楽しいレクリエーションを提供します。</p>
       </section>
       <a class="main-service-content-left-item3" href="">
         <picture>
-          <source srcset="<?php echo get_template_directory_uri(); ?>/images/main/banner-sp.jpg" media="(max-width: 820px)"> <img src="<?php echo get_template_directory_uri(); ?>/images/main/banner-pc.jpg" alt="画像の説明">
+          <source srcset="<?php echo get_template_directory_uri(); ?>/images/main/banner-sp.jpg" media="(max-width: 820px)"> <img src="<?php echo get_template_directory_uri(); ?>/images/main/banner-pc.jpg" alt="デイサービスほほえみを詳しく見る">
         </picture>
       </a>
     </div>
@@ -77,7 +77,7 @@
 
       <div class="sns-blog-wrap">
         <section class="sns-blog-title">
-          <h3><img src="<?php echo get_template_directory_uri(); ?>/images/common/blog.svg" alt=""><span>blog</span></h3>
+          <h3><img src="<?php echo get_template_directory_uri(); ?>/images/common/blog.svg" alt="ブログセクションのアイコン"><span>blog</span></h3>
           <p>日々の出来事から、私たちの想いや考えを文章でお届けします。</p>
           <a class="nav-btn medium-btn arrow-btn display-pc" href="/blog">
             <span>ブログ一覧へ</span></a>
@@ -142,7 +142,7 @@
 
       <section class="sns-section-detail">
         <div class="sns-section-detail-content">
-          <h4><img src="<?php echo get_template_directory_uri(); ?>/images/common/instagram.svg" alt=""><span>Instagram</span></h4>
+          <h4><img src="<?php echo get_template_directory_uri(); ?>/images/common/instagram.svg" alt="Instagramロゴ"><span>Instagram</span></h4>
           <p>
             利用者様との笑顔の思い出や季節のイベントを写真でシェアしています。
           </p>
@@ -151,7 +151,7 @@
           </a>
         </div>
         <div class="sns-section-detail-content">
-          <h4><img src="<?php echo get_template_directory_uri(); ?>/images/common/youtube.svg" alt=""><span>Youtube</span></h4>
+          <h4><img src="<?php echo get_template_directory_uri(); ?>/images/common/youtube.svg" alt="Youtubeロゴ"><span>Youtube</span></h4>
           <p>
             施設の日常やイベントの様子を動画で発信。ご家族も利用者様の暮らしを感じられます。
           </p>
@@ -174,7 +174,7 @@
       </p>
       <section class="family-section-content">
         <div class="family-section-content-item">
-          <img src="<?php echo get_template_directory_uri(); ?>/images/main/family-img1.jpg" alt="みのりくんの画像">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/main/family-img1.jpg" alt="みのりくん">
           <div>
             <div class="sp-family-section-border">
               <h3>みのりくん　♂</h3>
@@ -186,7 +186,7 @@
           </div>
         </div>
         <div class="family-section-content-item">
-          <img src="<?php echo get_template_directory_uri(); ?>/images/main/family-img2.jpg" alt="りんちゃんの画像">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/main/family-img2.jpg" alt="りんちゃん">
           <div>
             <div class="sp-family-section-border">
               <h3>りんちゃん　♀</h3>
@@ -198,7 +198,7 @@
           </div>
         </div>
         <div class="family-section-content-item">
-          <img src="<?php echo get_template_directory_uri(); ?>/images/main/family-img3.jpg" alt="まるちゃんの画像">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/main/family-img3.jpg" alt="まるちゃん">
           <div>
             <div class="sp-family-section-border">
               <h3>まるちゃん　♀</h3>
@@ -211,7 +211,7 @@
           </div>
         </div>
         <div class="family-section-content-item">
-          <img src="<?php echo get_template_directory_uri(); ?>/images/main/family-img4.jpg" alt="るんちゃんの画像">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/main/family-img4.jpg" alt="るんちゃん">
           <div>
             <div class="sp-family-section-border">
               <h3>るんちゃん　♀</h3>
@@ -237,7 +237,7 @@
         </p>
         <a class="nav-btn medium-btn arrow-btn" href="/recruit/"><span>採用情報</span></a>
       </div>
-      <img src="<?php echo get_template_directory_uri(); ?>/images/main/recruit.png" alt="採用情報の画像">
+      <img src="<?php echo get_template_directory_uri(); ?>/images/main/recruit.png" alt="社員風景">
     </section>
   </div>
   <div class="info-section">
