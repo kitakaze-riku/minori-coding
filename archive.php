@@ -1,116 +1,80 @@
-<?php get_header('btm_pg'); ?>
+<?php get_header(); ?>
 
-<div class="top-banner">
-    <div class="top-banner-txt">
-        <div>News</div>
-        <h1>お知らせ一覧</h1>
+<main class="fadein-up delay-4 delay-wait-5">
+  <section class="subheader">
+    <img class="header-circle-yellow" src="<?php echo get_template_directory_uri(); ?>/images/header/circle_yellow.svg" alt="">
+    <img class="header-circle-big-green" src="<?php echo get_template_directory_uri(); ?>/images/header/circle_green.svg" alt="">
+    <img class="header-circle-pink" src="<?php echo get_template_directory_uri(); ?>/images/header/circle_pink.svg" alt="">
+
+    <div class="subheader-content post-title-content">
+      <div class="subheader-content-title fadein-up delay-4 delay-wait-5">
+        <div class="post-sub-title">blog</div>
+        <h2>実里のひだまり日記</h2>
+        <img class="" src="<?php echo get_template_directory_uri(); ?>/images/header/subheader-parts1.svg" alt="実里の外観画像">
+      </div>
     </div>
-</div>
 
+  </section>
 
-<main class="news-archive">
+  <div class="layerbg-beige ">
+    <section class="rounded-bg white-bg post-directory ">
+      <div class="content-width-medium blog-content-wrap">
+        <div class="article-container">
+          <?php
+          if (have_posts()) :
+            while (have_posts()) : the_post(); ?>
+              <a class="blog-link" href="<?php the_permalink(); ?>">
 
-    <section class="flow btm-pg-cnt btm-page">
-
-        <ol class="breadcrumb ">
-            <li itemprop="itemListElement">
-                <a itemprop="item" href="/">
-                    <span itemprop="name">ホーム</span>
-                </a>
-                <meta itemprop="position" content="1" />
-            </li>
-
-            <li itemprop="itemListElement">
-                <a itemprop="item" href="">
-                    <span itemprop="name">お知らせ一覧1</span>
-                </a>
-                <meta itemprop="position" content="2" />
-            </li>
-        </ol>
-
-
-        <section class="blog-cont">
-
-
-            <article class="news-cnt-btm">
-                <?php include("template/conf.php"); ?>
-                <?php if (have_posts()) : ?>
-                    <?php while (have_posts()) : the_post(); ?>
-                        <?php $cat = get_the_category(); ?>
-                        <?php $cat = $cat[0]; ?>
-                        <!-- カテゴリー情報の取得 start -->
+                <div class="blog-item">
+                  <!-- アイキャッチ画像 -->
+                  <div class="blog-thumbnail">
+                    <?php if (has_post_thumbnail()) : ?>
+                      <?php the_post_thumbnail(); ?>
+                    <?php else : ?>
+                      <img src="<?php echo get_template_directory_uri(); ?>/images/default-thumbnail.jpg" alt="No Image">
+                    <?php endif; ?>
+                  </div>
+                  <!-- ブログ情報 -->
+                  <div class="blog-content">
+                    <div class="blog-category-data">
+                      <div class="blog-category">
                         <?php
-                        $category_state = 0;
-                        $cat = get_the_category();
-                        $cat = $cat[0];
-                        // print_r($cat->cat_name);
-                        $cat_name = $cat->cat_name;
-                        // カテゴリーid 取得 start
-                        // カテゴリーidによってcssを切り替えるために使用
-                        $cat_ID = $cat->cat_ID;
-                        // カテゴリーid 取得 end
-                        if ($cat_ID === $campaign || $cat_ID === $eigyoujikan) {
-                            if ($cat_ID === 1) {
-                                $cat_Category_cssname = "campaign";
-                            }
-                            if ($cat_ID === $eigyoujikan) {
-                                $cat_Category_cssname = "emergency-category";
-                            }
-                            $category_state = 1;
-                        } else {
-                            $cat_Category_cssname = "";
+                        $categories = get_the_category();
+                        if (!empty($categories)) {
+                          foreach ($categories as $category) {
+                            $category_slug = !empty($category->slug) ? esc_attr($category->slug) : sanitize_title($category->name);
+                            echo '<span class="category-' . $category_slug . '">' . esc_html($category->name) . '</span> ';
+                          }
                         }
                         ?>
-
-
-                        <a class="news-link" href="<?php the_permalink(); ?>">
-                            <div class="news-all-cnt">
-                                <?php if (has_post_thumbnail()) : ?>
-                                    <div class="post_thumbnail">
-                                        <?php the_post_thumbnail(); ?>
-                                    </div>
-                                <?php else : ?>
-                                    <div class="post_thumbnail">
-                                        <img src="<?php echo esc_url(get_theme_file_uri('img/thumbnail/minatoseikotuinn.jpg')) ?>" alt="">
-                                    </div>
-                                <?php endif; ?>
-
-                                <dl class="news-date-list">
-                                    <dt> <span class="dt-ttl"><time datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('Y.m.d'); ?></time></span><span class="<?php echo $cat_Category_cssname; ?>"><?php if ($category_state === 1) {
-                                                                                                                                                                                                            echo $cat_name;
-                                                                                                                                                                                                        } ?></span></dt>
-                                    <dd class=""><?php the_title(); ?></dd>
-                                </dl>
-
-                            </div>
-                        </a>
-
-
-                    <?php endwhile; ?>
-                <?php else : ?>
-                    <div class="error">
-                        <p>準備中です。</p>
+                      </div>
+                      <p class="blog-date"><?php echo get_the_date('Y.m.d'); ?></p>
                     </div>
-                <?php endif; ?>
-            </article>
-
-            <!-- //ページネーション -->
-            <div class="pagination">
-                <!-- //ここは任意で当ててるだけなのでクラスなどは自由にカスタマイズ -->
-                <?php echo paginate_links(array(
-                    'type' => 'list',
-                    'prev_text' => '«',
-                    'next_text' => '»'
-                )); ?>
-            </div>
-
-
-        </section>
-
-
+                    <h2 class="blog-title"><?php the_title(); ?></h2>
+                    <p class="blog-excerpt">
+                      <?php echo wp_trim_words(get_the_excerpt(), 55, '...'); ?>
+                    </p>
+                    <span class="read-more-btn">記事を読む</span>
+                  </div>
+                </div>
+              </a>
+          <?php endwhile;
+            the_posts_pagination(array(
+              'mid_size'  => 2,
+              'end_size'  => 1,
+              'prev_text' => '<img src="' . get_template_directory_uri() . '/images/common/left-arrow-red.svg" alt="前へ">',
+              'next_text' => '<img src="' .  get_template_directory_uri() . '/images/common/right-arrow-red-2.svg" alt="次へ">',
+              'screen_reader_text' => 'ページナビゲーション'
+            ));
+          endif;
+          ?>
+        </div>
+        <aside class="sidebar-content">
+          <?php get_sidebar(); ?>
+        </aside>
+      </div>
     </section>
-
+  </div>
 </main>
-
 
 <?php get_footer(); ?>

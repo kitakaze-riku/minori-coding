@@ -7,7 +7,7 @@
     <img class="header-circle-pink" src="<?php echo get_template_directory_uri(); ?>/images/header/circle_pink.svg" alt="">
 
     <div class="subheader-content post-title-content">
-      <div class="subheader-content-title">
+      <div class="subheader-content-title fadein-up delay-4 delay-wait-5">
         <div class="post-sub-title">News</div>
         <h2>お知らせ</h2>
         <img class="" src="<?php echo get_template_directory_uri(); ?>/images/header/subheader-parts1.svg" alt="実里の外観画像">
@@ -17,7 +17,7 @@
   </section>
 
   <div class="layerbg-beige ">
-    <section class="rounded-bg white-bg post-directory">
+    <section class="rounded-bg white-bg post-directory fadein-up delay-4 delay-wait-5">
       <div class="news-content-width news-detail-content">
         <div class="article-container">
           <article>
@@ -47,7 +47,7 @@
                 </div>
               </div>
             </article>
-            <a href="/news" class="back-to-blog">
+            <a href="<?php echo esc_url(home_url('/news')); ?>" class="back-to-blog">
               <img src="<?php echo get_template_directory_uri(); ?>/images/common/row.svg" alt="">
               <span>ブログ一覧へ戻る</span>
             </a>

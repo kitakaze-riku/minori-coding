@@ -7,7 +7,7 @@
     <img class="header-circle-pink" src="<?php echo get_template_directory_uri(); ?>/images/header/circle_pink.svg" alt="">
 
     <div class="subheader-content post-title-content">
-      <div class="subheader-content-title">
+      <div class="subheader-content-title fadein-up delay-4 delay-wait-5">
         <div class="post-sub-title">blog</div>
         <h2>実里のひだまり日記</h2>
         <img class="" src="<?php echo get_template_directory_uri(); ?>/images/header/subheader-parts1.svg" alt="実里の外観画像">
@@ -17,7 +17,7 @@
   </section>
 
   <div class="layerbg-beige ">
-    <section class="rounded-bg white-bg post-directory">
+    <section class="rounded-bg white-bg post-directory fadein-up delay-4 delay-wait-5">
       <div class="content-width-medium blog-content-wrap single-post-wrap">
         <div class="article-container">
           <article>

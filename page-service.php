@@ -7,16 +7,16 @@
     <img class="header-circle-pink" src="<?php echo get_template_directory_uri(); ?>/images/header/circle_pink.svg" alt="">
 
     <div class="subheader-content">
-      <div class="subheader-content-title">
+      <div class="subheader-content-title fadein-up delay-4 delay-wait-2">
         <h2><?php the_title(); ?> </h2>
         <img class="" src="<?php echo get_template_directory_uri(); ?>/images/header/subheader-parts1.svg" alt="実里の外観画像">
       </div>
 
-      <picture>
+      <picture class="fadein-up delay-4 delay-wait-2">
         <source srcset="<?php echo get_template_directory_uri(); ?>/images/header/sp-page-service1.png" media="(max-width: 820px)"> <img class="" src="<?php echo get_template_directory_uri(); ?>/images/header/page-service1.png" alt="サービス風景">
       </picture>
     </div>
-    <ul class="subheader-list service-list">
+    <ul class="subheader-list service-list fadein-up delay-4 delay-wait-2">
       <li>
         <img src="<?php echo get_template_directory_uri(); ?>/images/header/subheader-check.svg" alt="">
         <a href="#business">事業紹介</a>
@@ -42,18 +42,18 @@
 
   <div class="layerbg-beige" id="business">
     <section class="rounded-bg white-bg">
-      <div class="page-content content-width-medium">
+      <div class="page-content content-width-medium fadein-up delay-4 delay-wait-5">
         <div class="page-content-left">
           <h2><span>事業紹介</span></h2>
         </div>
-        <div class="page-content-right business-introduction">
+        <div class="page-content-right business-introduction ">
           <h3>「実里」は、以下の2つの事業を運営しています</h3>
 
           <p>
             「実里」は、入居者様にとって安心して暮らせる「わが家」のような存在でありたいと考えています。私たち職員は、ご入居者様やご家族様の思いに寄り添い、一人ひとりに合った生活をサポートすることで、「嬉しい」「楽しい」と感じられる毎日を創り出します。
           </p>
 
-          <div class="business-introduction-content">
+          <div class="business-introduction-content fadein-up delay-4 delay-wait-5">
             <div>
               <img src="<?php echo get_template_directory_uri(); ?>/images/main/service/top-commitment1.jpg" alt="住宅型有料老人ホーム実里｜食事の様子">
               <h4>住宅型有料老人ホーム 実里 </h4>
@@ -71,16 +71,16 @@
   </div>
 
   <section class="rounded-bg beige-bg">
-    <div class="page-content content-width-medium">
+    <div class="page-content content-width-medium fadein-up delay-4 delay-wait-5">
       <div class="page-content-left">
         <h2><span>実里のこだわり</span></h2>
       </div>
-      <div class="page-content-right">
+      <div class="page-content-right fadein-up delay-4 delay-wait-5">
         <section>
           <p class="commitment-p">「実里」のサービスは、ご利用者様の心と体に寄り添い、安心して過ごせる環境を提供します。</p>
 
           <div class="commitment">
-            <div class="commitment-item">
+            <div class="commitment-item fadein-up delay-4 delay-wait-5">
               <div class="commitment-item-left">
                 <h3>その人らしさを尊重したケア</h3>
                 <p>
@@ -91,7 +91,7 @@
                 <img src="<?php echo get_template_directory_uri(); ?>/images/main/service/commitment1.jpg" alt="サービスの風景">
               </div>
             </div>
-            <div class="commitment-item">
+            <div class="commitment-item fadein-up delay-4 delay-wait-5">
               <div class="commitment-item-left">
                 <h3>季節を感じる食事へのこだわり</h3>
                 <p>
@@ -102,7 +102,7 @@
                 <img src="<?php echo get_template_directory_uri(); ?>/images/main/service/commitment2.jpg" alt="食事を作っている風景">
               </div>
             </div>
-            <div class="commitment-item">
+            <div class="commitment-item fadein-up delay-4 delay-wait-5">
               <div class="commitment-item-left">
                 <h3>多彩なレクリエーション</h3>
                 <p>
@@ -113,7 +113,7 @@
                 <img src="<?php echo get_template_directory_uri(); ?>/images/main/service/commitment3.jpg" alt="レクリエーション風景">
               </div>
             </div>
-            <div class="commitment-item">
+            <div class="commitment-item fadein-up delay-4 delay-wait-5">
               <div class="commitment-item-left">
                 <h3>地域に愛される施設</h3>
                 <p>
@@ -132,7 +132,7 @@
 
   <div class="layerbg-beige-blend" id="facility-overview">
     <section class="rounded-bg white-bg">
-      <div class="page-content content-width-medium">
+      <div class="page-content content-width-medium fadein-up delay-4 delay-wait-5">
         <div class="page-content-left">
           <h2><span>施設紹介</span></h2>
         </div>
@@ -145,7 +145,7 @@
 
             <div class="facility-overview">
 
-              <div class="facility-overview-item">
+              <div class="facility-overview-item fadein-up delay-4 delay-wait-4">
                 <div class="">
                   <img src="<?php echo get_template_directory_uri(); ?>/images/main/service/service-detail1.jpg" alt="リビングルーム">
                   <h3>リビングルーム</h3>
@@ -158,7 +158,7 @@
                 </div>
               </div>
 
-              <div class="facility-overview-item">
+              <div class="facility-overview-item fadein-up delay-4 delay-wait-4">
                 <div>
                   <img src="<?php echo get_template_directory_uri(); ?>/images/main/service/service-detail3.jpg" alt="個室">
                   <h3>個室</h3>
@@ -171,7 +171,7 @@
                 </div>
               </div>
 
-              <div class="facility-overview-item">
+              <div class="facility-overview-item fadein-up delay-4 delay-wait-4">
 
                 <div>
                   <img src="<?php echo get_template_directory_uri(); ?>/images/main/service/service-detail5.jpg" alt="浴室">
@@ -185,7 +185,7 @@
                 </div>
               </div>
 
-              <div class="facility-overview-item">
+              <div class="facility-overview-item fadein-up delay-4 delay-wait-4">
                 <div>
                   <img src="<?php echo get_template_directory_uri(); ?>/images/main/service/service-detail7.jpg" alt="脱衣所">
                   <h3>脱衣所</h3>
@@ -205,11 +205,11 @@
   </div>
 
   <section class="rounded-bg beige-bg" id="daily">
-    <div class="page-content content-width-medium">
+    <div class="page-content content-width-medium fadein-up delay-4 delay-wait-5">
       <div class="page-content-left">
         <h2><span>1日の流れ</span></h2>
       </div>
-      <div class="page-content-right">
+      <div class="page-content-right fadein-up delay-4 delay-wait-5">
 
         <div class="daily">
           <div class="white-bg daily-schedule">
@@ -253,7 +253,7 @@
               <p>就寝</p>
             </div>
           </div>
-          <div class="white-bg daily-schedule">
+          <div class="white-bg daily-schedule fadein-up delay-4 delay-wait-5">
             <h3>デイサービス</h3>
             <div class="daily-schedule-detail">
               <span class="daily-schedule-detail-span2">8：00～</span>
@@ -298,7 +298,7 @@
             </div>
           </div>
         </div>
-        <div class="daily-gallery">
+        <div class="daily-gallery fadein-up delay-4 delay-wait-3">
           <img src="<?php echo get_template_directory_uri(); ?>/images/main/service/daily1.jpg" alt="サービスの様子">
           <img src="<?php echo get_template_directory_uri(); ?>/images/main/service/daily2.jpg" alt="食事の様子">
           <img src="<?php echo get_template_directory_uri(); ?>/images/main/service/daily3.jpg" alt="レクリエーションの様子">
@@ -312,7 +312,7 @@
 
   <div class="layerbg-beige-blend" id="staff">
     <section class="rounded-bg white-bg">
-      <div class="page-content content-width-medium">
+      <div class="page-content content-width-medium fadein-up delay-4 delay-wait-5">
         <div class="page-content-left">
           <h2><span>従業員紹介</span></h2>
         </div>

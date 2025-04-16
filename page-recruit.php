@@ -7,15 +7,15 @@
     <img class="header-circle-pink" src="<?php echo get_template_directory_uri(); ?>/images/header/circle_pink.svg" alt="">
 
     <div class="subheader-content">
-      <div class="subheader-content-title">
+      <div class="subheader-content-title fadein-up delay-4 delay-wait-5">
         <h2><?php the_title(); ?> </h2>
         <img class="" src="<?php echo get_template_directory_uri(); ?>/images/header/subheader-parts1.svg" alt="実里の外観画像">
       </div>
-      <picture>
+      <picture class="fadein-up delay-4 delay-wait-5">
         <source srcset="<?php echo get_template_directory_uri(); ?>/images/header/sp-recruit-top.png" media="(max-width: 820px)"> <img class="" src="<?php echo get_template_directory_uri(); ?>/images/header/recruit-top.png" alt="スタッフが笑顔で話している様子">
       </picture>
     </div>
-    <ul class="subheader-list">
+    <ul class="subheader-list fadein-up delay-4 delay-wait-5">
       <li>
         <img src="<?php echo get_template_directory_uri(); ?>/images/header/subheader-check.svg" alt="">
         <a href="">採用メッセージ</a>
@@ -37,11 +37,11 @@
 
   <div class="layerbg-beige">
     <section class="rounded-bg white-bg">
-      <div class="page-content content-width-medium">
+      <div class="page-content content-width-medium fadein-up delay-4 delay-wait-5">
         <div class="page-content-left">
           <h2><span>採用メッセージ</span></h2>
         </div>
-        <div class="page-content-right business-introduction">
+        <div class="page-content-right business-introduction ">
           <h3>一緒に「心が通う介護」をつくりませんか？</h3>
 
           <p>
@@ -53,23 +53,23 @@
             心に寄り添う介護で、誰かの人生を豊かにするお手伝いを、私たちと一緒に始めてみませんか？
           </p>
 
-          <img class="recruit-message" src="<?php echo get_template_directory_uri(); ?>/images/main/recruit/message.jpg" alt="サービス風景｜体操を行っている様子">
+          <img class="recruit-message fadein-up delay-4 delay-wait-4" src="<?php echo get_template_directory_uri(); ?>/images/main/recruit/message.jpg" alt="サービス風景｜体操を行っている様子">
         </div>
       </div>
     </section>
   </div>
 
   <section class="rounded-bg beige-bg" id="desired-person">
-    <div class="page-content content-width-medium">
-      <div class="page-content-left">
+    <div class="page-content content-width-medium fadein-up delay-4 delay-wait-5">
+      <div class="page-content-left fadein-up delay-4 delay-wait-5">
         <h2><span>求める人物像</span></h2>
       </div>
-      <div class="page-content-right">
+      <div class="page-content-right fadein-up delay-4 delay-wait-5">
         <section>
           <p class="commitment-p">私たちが大切にしているのは、利用者様との関わりを楽しみ、日々の介護を心から喜びに変えられることです。以下のような想いを持つ方をお待ちしています。</p>
 
           <div class="desired-person">
-            <div class="desired-person-item">
+            <div class="desired-person-item fadein-up delay-4 delay-wait-5">
               <img src="<?php echo get_template_directory_uri(); ?>/images/main/recruit/desired-person1.svg" alt="車椅子を押す人のイラスト">
 
               <h3>介護を楽しめる方</h3>
@@ -77,7 +77,7 @@
                 利用者様との触れ合いや日々の出来事を喜びに変え、介護を心から楽しめる方を歓迎します。利用者様の笑顔や「ありがとう」の言葉が、自分自身のやりがいにつながる方にぴったりの職場です。
               </p>
             </div>
-            <div class="desired-person-item">
+            <div class="desired-person-item fadein-up delay-4 delay-wait-5">
               <img src="<?php echo get_template_directory_uri(); ?>/images/main/recruit/desired-person2.svg" alt="話し合いを行う人々のイラスト">
 
               <h3>介護に迷いや不安を <br>感じている方</h3>
@@ -86,7 +86,7 @@
               </p>
             </div>
 
-            <div class="desired-person-item">
+            <div class="desired-person-item fadein-up delay-4 delay-wait-5">
               <img src="<?php echo get_template_directory_uri(); ?>/images/main/recruit/desired-person3.svg" alt="ベビーカーに乗る赤ちゃんのイラスト">
 
               <h3>子育てと <br>両立したい方</h3>
@@ -95,7 +95,7 @@
               </p>
             </div>
 
-            <div class="desired-person-item">
+            <div class="desired-person-item fadein-up delay-4 delay-wait-5">
               <img src="<?php echo get_template_directory_uri(); ?>/images/main/recruit/desired-person4.svg" alt="ハイタッチしている人たちのイラスト">
 
               <h3>年齢を問わず<br>挑戦したい方</h3>
@@ -106,7 +106,7 @@
 
           </div>
 
-          <section class="desired-person-vision">
+          <section class="desired-person-vision fadein-up delay-4 delay-wait-5">
             <p>
               「誰かの助けになりたい」<br>
               「利用者様の笑顔を見たい」<br>
@@ -124,11 +124,11 @@
 
   <div class="layerbg-beige-blend" id="staff">
     <section class="rounded-bg white-bg">
-      <div class="page-content content-width-medium">
+      <div class="page-content content-width-medium fadein-up delay-4 delay-wait-5">
         <div class="page-content-left">
           <h2><span>先輩社員紹介</span></h2>
         </div>
-        <div class="page-content-right">
+        <div class="page-content-right fadein-up delay-4 delay-wait-5">
           <div class="staff">
             <div class="staff-profile pink-bg">
               <img src="<?php echo get_template_directory_uri(); ?>/images/main/recruit/staff.png" alt="萩原さん ／ 看護職員のプロフィール写真">
@@ -167,7 +167,7 @@
   </div>
 
   <section class="rounded-bg beige-bg requirements" id="requirements">
-    <div class="page-content content-width-medium">
+    <div class="page-content content-width-medium fadein-up delay-4 delay-wait-5">
       <div class="page-content-left">
         <h2><span>募集要項・資格</span></h2>
       </div>

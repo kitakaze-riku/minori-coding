@@ -7,11 +7,11 @@
     <img class="header-circle-pink" src="<?php echo get_template_directory_uri(); ?>/images/header/circle_pink.svg" alt="">
 
     <div class="subheader-content contact-page-top">
-      <div class="subheader-content-title">
+      <div class="subheader-content-title fadein-up delay-4 delay-wait-5">
         <h2><?php the_title(); ?> </h2>
         <img class="" src="<?php echo get_template_directory_uri(); ?>/images/header/subheader-parts1.svg" alt="">
       </div>
-      <picture>
+      <picture class="fadein-up delay-4 delay-wait-5">
         <source srcset="<?php echo get_template_directory_uri(); ?>/images/common/sp-contact.png" media="(max-width: 820px)"> <img class="" src="<?php echo get_template_directory_uri(); ?>/images/common/page-contact-bg.png" alt="お問合せ内容確認画面｜りんちゃんの写真">
       </picture>
     </div>
@@ -20,7 +20,7 @@
 
   <div class="layerbg-beige ">
     <section class="rounded-bg white-bg">
-      <div class="page-contact content-width-medium ">
+      <div class="page-contact content-width-medium fadein-up delay-4 delay-wait-5">
         <h2><span>送信内容のご確認</span></h2>
 
         <!-- <form class="form-content beige-bg" action="confirm.php" method="post">

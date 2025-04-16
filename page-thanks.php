@@ -6,7 +6,7 @@
     <img class="header-circle-big-green" src="<?php echo get_template_directory_uri(); ?>/images/header/circle_green.svg" alt="">
     <img class="header-circle-pink" src="<?php echo get_template_directory_uri(); ?>/images/header/circle_pink.svg" alt="">
 
-    <div class="subheader-content contact-page-top">
+    <div class="subheader-content contact-page-top fadein-up delay-4 delay-wait-5">
       <div class="subheader-content-title">
         <h2><?php the_title(); ?> </h2>
         <img class="" src="<?php echo get_template_directory_uri(); ?>/images/header/subheader-parts1.svg" alt="">
@@ -19,7 +19,7 @@
 
   <div class="layerbg-beige ">
     <section class="rounded-bg white-bg">
-      <div class="page-contact content-width-medium">
+      <div class="page-contact content-width-medium fadein-up delay-4 delay-wait-5">
         <h2 class="display-pc"><span>お問い合わせありがとうございます。</span></h2>
 
         <div class="content-width-medium sp-tel-detail display-sp contact-sp-title-top">
@@ -48,7 +48,7 @@
 
 
 
-  <div class="page-contact content-width-medium display-pc flex-direction">
+  <div class="page-contact content-width-medium display-pc flex-direction fadein-up delay-4 delay-wait-5">
     <h2><span>電話でのお問い合わせ</span></h2>
     <div class="tel-detail layerbg-beige-blend">
       <p>お急ぎの場合はお電話でお問い合わせください。</p>
@@ -56,7 +56,7 @@
     </div>
   </div>
 
-  <div class="content-width-medium sp-tel-detail display-sp sp-tel-top">
+  <div class="content-width-medium sp-tel-detail display-sp sp-tel-top fadein-up delay-4 delay-wait-5">
     <div class="tel-detail-border">
       <h2 class="tel-title"><span>電話での <br>お問い合わせ</span></h2>
     </div>

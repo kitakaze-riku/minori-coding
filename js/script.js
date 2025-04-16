@@ -1,8 +1,25 @@
+document.addEventListener("DOMContentLoaded", () => {
+  const targets = document.querySelectorAll('.fadein-up, .fadein-down, .fadein-left, .fadein-right');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+      }
+    });
+  }, {
+    threshold: 0.1
+  });
+
+  targets.forEach(el => observer.observe(el));
+});
+
+
 document.addEventListener("DOMContentLoaded", function () {
   const track = document.querySelector(".slider-track");
   const items = document.querySelectorAll(".slider-track-item");
 
-  // 画像を複製して無限ループ用に追加
+  // 画像を複製して無限ループ用に追加する
   items.forEach(item => {
     const clone = item.cloneNode(true);
     track.appendChild(clone);

@@ -2,6 +2,144 @@
 @use 'mixin' as *;
 @use 'root' as *;
 
+// フェードインjs statr
+/* === アニメーション定義 === */
+
+/* 下から上 */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px) scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* 上から下 */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px) scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* 左から右 */
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px) scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+/* 右から左 */
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px) scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+/* === 初期状態：非表示 === */
+.fadein-up,
+.fadein-down,
+.fadein-left,
+.fadein-right {
+  opacity: 0;
+}
+
+/* === 表示時アニメーション（is-visibleが付与されたら） === */
+.fadein-up.is-visible {
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+.fadein-down.is-visible {
+  animation: fadeInDown 1s ease-out forwards;
+}
+
+.fadein-left.is-visible {
+  animation: fadeInLeft 1s ease-out forwards;
+}
+
+.fadein-right.is-visible {
+  animation: fadeInRight 1s ease-out forwards;
+}
+
+/* === アニメーション速度（duration） === */
+.delay-1.is-visible {
+  animation-duration: 2.2s;
+}
+
+.delay-2.is-visible {
+  animation-duration: 1.8s;
+}
+
+.delay-3.is-visible {
+  animation-duration: 1.5s;
+}
+
+.delay-4.is-visible {
+  animation-duration: 0.7s;
+}
+
+.delay-5.is-visible {
+  animation-duration: 0.4s;
+}
+
+/* === アニメーション待機時間（delay） === */
+.delay-wait-1.is-visible {
+  animation-delay: 0.2s;
+}
+
+.delay-wait-2.is-visible {
+  animation-delay: 0.4s;
+}
+
+.delay-wait-3.is-visible {
+  animation-delay: 0.6s;
+}
+
+.delay-wait-4.is-visible {
+  animation-delay: 0.8s;
+}
+
+.delay-wait-5.is-visible {
+  animation-delay: 1.0s;
+}
+
+.delay-wait-6.is-visible {
+  animation-delay: 1.2s;
+}
+
+.delay-wait-7.is-visible {
+  animation-delay: 1.4s;
+}
+
+.delay-wait-8.is-visible {
+  animation-delay: 1.6s;
+}
+
+
+
+// フェードインjs end
+
 // header start
 .header-logo {
   padding: 0 0 0 0;
@@ -167,7 +305,7 @@
     top: 201px;
     left: 16%;
     aspect-ratio: 1 / 1;
-    width: clamp(300px, 26.5vw, 500px);
+    width: clamp(300px, 26.5vw, 400px);
   }
 
   .header-circle-main1 {
@@ -182,7 +320,7 @@
     position: absolute;
     left: 9.7%;
     // top: 65vh;
-    bottom: 150px;
+    bottom: 16.48%;
     font-weight: var(--weight-bold);
 
     h2 {
@@ -320,7 +458,7 @@
 
 .main-service {
   margin: 0 auto;
-  margin-top: 368px;
+  margin-top: 218px;
   display: flex;
   color: var(--text-base);
   justify-content: space-between;
@@ -1037,7 +1175,14 @@ small {
   padding: 48px 0;
 }
 
+//画面幅 1200px start
+@include mq("pc") {
+  .header-content {
+    height: 100vh;
+  }
+}
 
+//画面幅 1200px end
 
 @include mq("tb") {
   .footer-padding {
@@ -2546,15 +2691,19 @@ small {
 }
 
 //start カテゴリー毎のcss名
-.category-minori {
-  background-color: var(--category-minori);
-  color: var(--primary-600);
+.blog-category ,.swiper-slide{
+
+  .category-minori {
+    background-color: var(--category-minori);
+    color: var(--primary-600);
+  }
+  .category-hohoemi {
+    background-color: var(--category-hohoemi);
+    color: var(--category-hohoemi-color);
+  }
 }
 
-.category-hohoemi {
-  background-color: var(--category-hohoemi);
-  color: var(--category-hohoemi-color);
-}
+
 
 .blog-link {
   display: block;
@@ -2919,14 +3068,13 @@ small {
 
   .nav-menu {
     position: fixed;
-    top: 0;
-    right: -100%;
+    top: -200%;
     z-index: 50;
     width: 100%;
     height: 100vh;
     background: #fff;
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
-    transition: 0.3s;
+    transition: 0.5s;
     padding: 56px 16px;
     padding-top: 120px;
     overflow-y: auto;
@@ -2934,7 +3082,7 @@ small {
   }
 
   .nav-menu.active {
-    right: 0;
+    top: 0;
   }
 
   .accordion {
@@ -2986,7 +3134,7 @@ small {
 
 
   .header-content {
-    height: 105vh;
+    height: 1070px;
     z-index: 0;
 
     // start ヘッダーcircle関連
@@ -2995,9 +3143,9 @@ small {
     }
 
     .header-circle-yellow {
-      top: 391px;
+      top: 491px;
       left: -19px;
-      width: 183px;
+      width: 48.8%;
     }
 
     .header-circle-big-green {
@@ -3008,32 +3156,46 @@ small {
     }
 
     .header-circle-pink {
-      top: 198px;
-      left: 10.4%;
-      width: 69px;
+      top: 182px;
+      left: 24.4%;
+      width: 18%;
     }
 
     .header-circle-main2 {
-      top: 341px;
+      top: 40%;
       left: -23px;
       aspect-ratio: 1 / 1;
-      width: clamp(171px, 26.5vw, 500px);
+      width: clamp(171px, 45.5vw, 500px);
+    }
+
+    .header-group {
+      position: relative;
+      width: clamp(326px, 68.8vw, 818px);
+      ;
+      top: 40px;
+      right: 0;
+      margin-left: auto;
     }
 
     .header-circle-main1 {
-      top: 72px;
-      right: -36px;
-      width: clamp(326px, 51.8vw, 818px);
+      position: unset;
+      width: 100%;
+      right: unset;
       aspect-ratio: 1 / 1.182;
     }
 
     .header-text {
-      left: 29.7%;
-      top: 449px;
-      bottom: 0px;
+      position: unset;
+      left: unset;
+      top: unset;
+      bottom: unset;
+      padding-left: 34px;
+      text-align: left;
+      // margin-top: -44px;
 
       h2 {
-        letter-spacing: 0.03rem;
+        letter-spacing: 0.13rem;
+        font-size: clamp(28px, 7.46vw, 40px);
 
         span {
           letter-spacing: 0.04rem;
@@ -3041,7 +3203,7 @@ small {
       }
 
       p {
-        font-size: clamp(15px, 1.38vw, 24px);
+        font-size: clamp(20px, 4vw, 24px);
         margin-top: 10px;
 
         span {
@@ -3054,32 +3216,39 @@ small {
   }
 
   .main-about {
-    padding: 0 20px;
+    padding: 0 120px;
 
-    .main-side1 {
+    .sp-main-top1 {
       position: absolute;
       left: 0;
-      top: -40px;
-      width: 100%;
+      width: 29.6%;
+      top: 0;
     }
 
-    .main-side2 {
+    .sp-main-top2 {
       position: absolute;
       right: 0;
-      width: 100%;
-      bottom: -280px;
+      width: 30%;
+      top: 0;
+    }
+
+    .sp-main-top3 {
+      position: absolute;
+      right: 25.6%;
+      width: 20%;
+      top: -72px;
     }
 
     position: relative;
     z-index: 0;
     left: 0;
-    padding-top: 154px;
+    padding-top: 254px;
     top: -1px;
     background: #F0E9E2;
     width: 100%;
     height: 100%;
     background-image: url('../images/main/bg_element.png');
-    background-size: 500px 990px;
+    background-size: 1060px 2000px;
     /* 任意のサイズ */
     background-position: top;
 
@@ -3090,7 +3259,7 @@ small {
 
       h2 {
         color: var(--primary-600);
-        @include clamp-text("3xl");
+        @include clamp-text("4xl");
         font-weight: var(--weight-bold);
         margin: 0 10%;
         letter-spacing: 0.7px;
@@ -3101,6 +3270,7 @@ small {
           display: inline-block;
           position: relative;
           margin-right: 30px;
+          margin-left: 13px;
 
           &::before {
             position: absolute;
@@ -3137,7 +3307,7 @@ small {
         display: none;
         margin: 24px 0;
         color: var(--gray-800);
-        font-size: clamp(14px, 1.25vw, 20px);
+        font-size: clamp(16px, 1.25vw, 20px);
         line-height: 2.4;
         letter-spacing: -0.1px;
 
@@ -3149,7 +3319,7 @@ small {
 
         .main-about-strong {
           margin: 24px 0;
-          font-size: 20px;
+          font-size: 24px;
 
           .sp-main-about-strong {
             display: block;
@@ -3161,6 +3331,35 @@ small {
 
   }
 
+  .sp-main-bottom-content {
+    position: relative;
+    width: 100%;
+    height: 435px;
+    margin-top: 20px;
+
+    .sp-main-bottom1 {
+      position: absolute;
+      left: 0;
+      width: 43.2%;
+      top: 0;
+    }
+
+    .sp-main-bottom2 {
+      position: absolute;
+      right: 0;
+      width: 22.4%;
+      top: 52px;
+    }
+
+    .sp-main-bottom3 {
+      position: absolute;
+      right: 13.6%;
+      width: 35.5%;
+      top: 259px;
+    }
+  }
+
+
   .br-text {
     display: block;
   }
@@ -3169,14 +3368,14 @@ small {
   .main-service {
     margin: 0 auto;
     padding: 0 20px;
-    margin-top: 368px;
+    margin-top: 198px;
     display: block;
 
     .main-service-content-left {
       width: 100%;
 
       h2 {
-        @include clamp-text("3xl");
+        @include clamp-text("sp-title32");
         margin-bottom: 32px;
         margin-left: 0%;
         text-align: center;
@@ -4235,13 +4434,17 @@ small {
     .slider-track {
       display: flex;
       width: max-content;
+      height: unset;
 
       .slider-track-item {
+        aspect-ratio: 7499/1032;
         width: 100%;
-        height: 203px;
+        height: 100%;
+
+        // object-fit: cover;
+
       }
     }
-
   }
 
   // end スライダー
@@ -5222,6 +5425,226 @@ small {
 
 @include mq("sp") {
 
+  // sp fw start
+  .header-content {
+    height: 105svh;
+    z-index: 0;
+
+    // start ヘッダーcircle関連
+    .header-circle-small-green {
+      display: none;
+    }
+
+    .header-circle-yellow {
+      top: 341px;
+      left: -19px;
+      width: 48.8%;
+    }
+
+    .header-circle-big-green {
+      top: 98px;
+      width: 330px;
+      right: -70px;
+      height: 330px;
+    }
+
+    .header-circle-pink {
+      top: 182px;
+      left: 24.4%;
+      width: 18%;
+    }
+
+    .header-circle-main2 {
+      top: 40%;
+      left: -23px;
+      aspect-ratio: 1 / 1;
+      width: clamp(171px, 45.5vw, 500px);
+    }
+
+    .header-group {
+      position: relative;
+      width: clamp(300px, 63.8vw, 818px);
+      top: 70px;
+      right: 0;
+      margin-left: auto;
+    }
+
+    .header-circle-main1 {
+      position: unset;
+      width: 100%;
+      right: unset;
+      aspect-ratio: 1 / 1.182;
+    }
+
+    .header-text {
+      position: unset;
+      left: unset;
+      top: unset;
+      bottom: unset;
+      padding-left: 34px;
+      // margin-top: -44px;
+
+      h2 {
+        letter-spacing: 0.13rem;
+        font-size: clamp(28px, 7.46vw, 30px);
+
+        span {
+          letter-spacing: 0.04rem;
+        }
+      }
+
+      p {
+        font-size: clamp(15px, 4vw, 24px);
+        margin-top: 10px;
+
+        span {
+          display: block;
+        }
+      }
+    }
+
+    // end ヘッダーcircle関連
+  }
+
+  // sp fw　end
+
+  .main-about {
+    padding: 0 20px;
+
+    .sp-main-top3 {
+
+      top: -32px;
+    }
+
+
+    position: relative;
+    z-index: 0;
+    left: 0;
+    padding-top: 154px;
+    top: -1px;
+    background: #F0E9E2;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/main/bg_element.png');
+    background-size: 500px 990px;
+    /* 任意のサイズ */
+    background-position: top;
+
+    .main-about-content {
+      width: 89.33%;
+      margin: 0 auto;
+      text-align: center;
+
+      h2 {
+        color: var(--primary-600);
+        @include clamp-text("3xl");
+        font-weight: var(--weight-bold);
+        margin: 0 7%;
+        letter-spacing: 0.7px;
+        line-height: 1.6;
+
+        //start ダブルクウォート箇所
+        .main-about-quote {
+          display: inline-block;
+          position: relative;
+          margin-right: 30px;
+
+          &::before {
+            position: absolute;
+            top: 8px;
+            left: -15.8px;
+            content: '';
+            display: inline-block;
+            width: 15.67px;
+            height: 11.18px;
+            background-image: url('../images/main/quote-start.png');
+            background-size: cover;
+            background-position: center;
+          }
+
+          &::after {
+            position: absolute;
+            bottom: 7px;
+            right: -22px;
+            content: '';
+            display: inline-block;
+            width: 15.67px;
+            height: 11.18px;
+            background-image: url('../images/main/quote-end.png');
+            background-size: cover;
+            background-position: center;
+          }
+        }
+
+        //end ダブルクウォート箇所
+
+      }
+
+      p {
+        display: none;
+        margin: 24px 0;
+        color: var(--gray-800);
+        font-size: clamp(14px, 1.25vw, 20px);
+        line-height: 2.4;
+        letter-spacing: -0.1px;
+
+
+      }
+
+      .sp-display-text {
+        display: block;
+
+        .main-about-strong {
+          margin: 24px 0;
+          font-size: 20px;
+
+          .sp-main-about-strong {
+            display: block;
+          }
+        }
+      }
+
+    }
+
+  }
+
+  .sp-main-bottom-content {
+    position: relative;
+    width: 100%;
+    height: 245px;
+    margin-top: 20px;
+
+    .sp-main-bottom1 {
+      position: absolute;
+      left: 0;
+      width: 43.2%;
+      top: 0;
+    }
+
+    .sp-main-bottom2 {
+      position: absolute;
+      right: 0;
+      width: 22.4%;
+      top: 20px;
+    }
+
+    .sp-main-bottom3 {
+      position: absolute;
+      right: 17.6%;
+      width: 35.5%;
+      top: 137px;
+    }
+  }
+
+  .main-service {
+    margin: 0 auto;
+    padding: 0 20px;
+    margin-top: 145px;
+    display: block;
+  }
+
+  //sp fv end
+
   .sp-footer-nav {
     display: block;
     padding: 0 24px;
@@ -5346,6 +5769,69 @@ small {
 //end ハンバーガーメニュー
 // レスポンシブcss end
 
+
+//画面幅 992px start
+@include mq("lp") {
+  .header-nav-content {
+
+    .header-nav-wrap {
+      .header-nav-inner {
+        .header-nav {
+          gap: 20px;
+
+          li {
+            a {
+              font-size: 13px;
+            }
+          }
+        }
+      }
+
+      .header-nav-contact {
+        display: flex;
+        align-items: center;
+        height: 56px;
+        width: 174px;
+
+        .header-nav-wrap {
+          gap: 6px;
+
+          .header-nav {}
+        }
+
+
+        // padding: 16px 24px;
+        span {
+          @include clamp-text(xs);
+          position: relative;
+          display: flex;
+          justify-content: center;
+          padding-left: 20px;
+
+          &::after {
+            content: "";
+            position: absolute;
+            left: -4px;
+            top: 2px;
+            display: block;
+            width: 21px;
+            height: 21px;
+            background-image: url('../images/common/email.svg');
+            background-size: cover;
+            background-position: center;
+            margin-right: 8px;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+//画面幅 992px end
+
+
+
 @media (min-width: 821px) {
   .sns-blog-section .swiper-wrapper {
     display: flex;
@@ -5363,4 +5849,61 @@ small {
   .sns-blog-section .swiper-pagination {
     display: none !important;
   }
+}
+
+@media (min-width: 1700px) {
+  .header-content {
+
+    height: 105vh;
+
+    // start ヘッダーcircle関連
+    .header-circle-small-green {
+      top: 113px;
+      left: 0px;
+      width: 3.3vw;
+    }
+
+    .header-circle-yellow {
+      top: 191px;
+      left: 0px;
+      z-index: -97;
+      width: 30.1vw;
+    }
+
+    .header-circle-big-green {
+      top: 0px;
+      right: 0px;
+      width: clamp(464px, 32.2vw, 100%);
+      // height: 566px;
+    }
+
+    .header-circle-pink {
+      top: 98px;
+      left: 32.4%;
+      width: 12.8vw;
+    }
+
+    .header-circle-main2 {
+
+      top: 157px;
+      left: 22%;
+      aspect-ratio: 1 / 1;
+      width: clamp(300px, 26.5vw, 400px);
+    }
+
+    .header-circle-main1 {
+      top: 48px;
+      right: 0px;
+      width: clamp(310px, 51.8vw, 850px);
+      aspect-ratio: 1 / 1.182;
+    }
+
+    .header-text {
+      left: 16.7%;
+      bottom: 150px;
+    }
+
+    // end ヘッダーcircle関連
+  }
+
 }

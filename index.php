@@ -112,7 +112,7 @@
 
       <section class="sns-section-detail">
         <div class="sns-section-detail-content">
-          <h4><img src="<?php echo get_template_directory_uri(); ?>/images/common/instagram.svg" alt=""><span>Instagram</span></h4>
+          <h4><img src="<?php echo get_template_directory_uri(); ?>/images/common/instagram.png" alt=""><span>Instagram</span></h4>
           <p>
             利用者様との笑顔の思い出や季節のイベントを写真でシェアしています。
           </p>

@@ -7,15 +7,15 @@
     <img class="header-circle-pink" src="<?php echo get_template_directory_uri(); ?>/images/header/circle_pink.svg" alt="">
 
     <div class="subheader-content">
-      <div class="subheader-content-title">
+      <div class="subheader-content-title fadein-up delay-4 delay-wait-5">
         <h2><?php the_title(); ?> </h2>
         <img class="" src="<?php echo get_template_directory_uri(); ?>/images/header/subheader-parts1.svg" alt="">
       </div>
-      <picture>
+      <picture class="fadein-up delay-4 delay-wait-5">
         <source srcset="<?php echo get_template_directory_uri(); ?>/images/common/sp-contact.png" media="(max-width: 820px)"> <img class="" src="<?php echo get_template_directory_uri(); ?>/images/common/page-contact-bg.png" alt="お問合せ画面｜りんちゃんの写真">
       </picture>
     </div>
-    <ul class="subheader-list">
+    <ul class="subheader-list fadein-up delay-4 delay-wait-5">
       <li>
         <img src="<?php echo get_template_directory_uri(); ?>/images/header/subheader-check.svg" alt="">
         <a href="">メールでのお問い合わせ </a>
@@ -29,7 +29,7 @@
 
   <div class="layerbg-beige ">
     <section class="rounded-bg white-bg">
-      <div class="page-contact content-width-medium">
+      <div class="page-contact content-width-medium fadein-up delay-4 delay-wait-5">
         <h2 class="display-pc"><span>メールでのお問い合わせ</span></h2>
 
         <div class="content-width-medium sp-tel-detail display-sp contact-sp-title-top">
@@ -146,7 +146,7 @@
 
 
 
-  <div class="page-contact content-width-medium display-pc flex-direction">
+  <div class="page-contact content-width-medium display-pc flex-direction fadein-up delay-4 delay-wait-5">
     <h2><span>電話でのお問い合わせ</span></h2>
     <div class="tel-detail layerbg-beige-blend">
       <p>お急ぎの場合はお電話でお問い合わせください。</p>
@@ -154,7 +154,7 @@
     </div>
   </div>
 
-  <div class="content-width-medium sp-tel-detail display-sp contact-sp-tel-top">
+  <div class="content-width-medium sp-tel-detail display-sp contact-sp-tel-top fadein-up delay-4 delay-wait-5">
     <div class="tel-detail-border">
       <h2 class="tel-title"><span>電話での <br>お問い合わせ</span></h2>
     </div>

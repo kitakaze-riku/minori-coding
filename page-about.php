@@ -10,16 +10,16 @@
     <img class="header-circle-pink" src="<?php echo get_template_directory_uri(); ?>/images/header/circle_pink.svg" alt="">
 
     <div class="subheader-content">
-      <div class="subheader-content-title">
+      <div class="subheader-content-title fadein-up delay-4 delay-wait-2">
         <h2><?php the_title(); ?> </h2>
         <img class="" src="<?php echo get_template_directory_uri(); ?>/images/header/subheader-parts1.svg" alt="">
       </div>
-      <picture>
+      <picture class="fadein-up delay-4 delay-wait-2">
         <source srcset="<?php echo get_template_directory_uri(); ?>/images/header/sp-about-top.png" media="(max-width: 820px)"> <img src="<?php echo get_template_directory_uri(); ?>/images/header/about-top.png" alt="実里の外観">
       </picture>
 
     </div>
-    <ul class="subheader-list">
+    <ul class="subheader-list fadein-up delay-4 delay-wait-2">
       <li>
         <img src="<?php echo get_template_directory_uri(); ?>/images/header/subheader-check.svg" alt="">
         <a href="">ごあいさつ</a>
@@ -40,7 +40,7 @@
   </section>
 
   <div class="layerbg-beige" id="greeting">
-    <section class="rounded-bg white-bg">
+    <section class="rounded-bg white-bg fadein-up delay-4 delay-wait-3">
       <div class="page-content  content-width-medium">
         <div class="page-content-left">
           <h2><span>ごあいさつ</span></h2>
@@ -58,26 +58,26 @@
             <span>
               代表取締役 角田 明美
             </span>
-            <img src="<?php echo get_template_directory_uri(); ?>/images/main/about-img.jpg" alt="代表取締役：角田明美">
+            <img class="fadein-up delay-4 delay-wait-5" src="<?php echo get_template_directory_uri(); ?>/images/main/about-img.jpg" alt="代表取締役：角田明美">
           </p>
         </div>
       </div>
     </section>
   </div>
 
-  <section class="rounded-bg beige-bg" id="feature">
+  <section class="rounded-bg beige-bg fadein-up delay-4 delay-wait-2" id="feature">
     <div class="page-content content-width-medium">
       <div class="page-content-left">
         <h2><span>実里の特徴</span></h2>
       </div>
       <div class="page-content-right">
-        <section class="page-feature">
+        <section class="page-feature fadein-up delay-4 delay-wait-5">
           <h3>「わが家」で過ごすような安心感と喜びを提供します</h3>
           <p>
             「実里」は、入居者様にとって安心して暮らせる「わが家」のような存在でありたいと考えています。私たち職員は、ご入居者様やご家族様の思いに寄り添い、一人ひとりに合った生活をサポートすることで、「嬉しい」「楽しい」と感じられる毎日を創り出します。
           </p>
         </section>
-        <section class="page-vision" id="vision">
+        <section class="page-vision fadein-up delay-4 delay-wait-5" id="vision">
           <span>
             企業理念
           </span>
@@ -100,7 +100,7 @@
             </li>
           </ul>
         </section>
-        <section class="care-services">
+        <section class="care-services fadein-up delay-4 delay-wait-5">
           <h3>こだわりのケア</h3>
 
           <ul class="care-services-list">
@@ -124,8 +124,8 @@
     </div>
   </section>
 
-  <div class="layerbg-beige-blend" id="company">
-    <section class="rounded-bg company">
+  <div class="layerbg-beige-blend " id="company">
+    <section class="rounded-bg company fadein-up delay-4 delay-wait-2">
       <div class="page-content content-width-medium">
         <div class="page-content-left">
           <h2><span>会社概要</span></h2>
@@ -201,7 +201,7 @@
     </section>
   </div>
 
-  <section class="rounded-bg beige-bg" id="access">
+  <section class="rounded-bg beige-bg fadein-up delay-4 delay-wait-2" id="access">
     <div class="page-content content-width-medium">
       <div class="page-content-left">
         <h2><span>アクセス</span></h2>
@@ -233,11 +233,13 @@
     </div>
   </section>
 
-  <div class=" layerbg-beige-blend ">
+  <div class=" layerbg-beige-blend fadein-up delay-4 delay-wait-2">
     <div class="rounded-bg slider">
       <div class="slider-wrap">
         <div class="slider-track">
-          <img class="slider-track-item" src="<?php echo get_template_directory_uri(); ?>/images/main/slide/slider.png" alt="サービス・施設の様子・実里の小さな家族たちのギャラリー" />
+          <picture>
+            <source srcset="<?php echo get_template_directory_uri(); ?>/images/main/slide/slider-sp.png" media="(max-width: 820px)"> <img src="<?php echo get_template_directory_uri(); ?>/images/main/slide/slider.png" alt="サービス・施設の様子・実里の小さな家族たちのギャラリー">
+          </picture>
         </div>
       </div>
 

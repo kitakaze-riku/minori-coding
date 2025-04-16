@@ -9,14 +9,14 @@ $args = array(
 $query = new WP_Query($args);
 ?>
 
-<main>
+<main class="fadein-up delay-4 delay-wait-5">
   <section class="subheader">
     <img class="header-circle-yellow" src="<?php echo get_template_directory_uri(); ?>/images/header/circle_yellow.svg" alt="">
     <img class="header-circle-big-green" src="<?php echo get_template_directory_uri(); ?>/images/header/circle_green.svg" alt="">
     <img class="header-circle-pink" src="<?php echo get_template_directory_uri(); ?>/images/header/circle_pink.svg" alt="">
 
     <div class="subheader-content post-title-content">
-      <div class="subheader-content-title">
+      <div class="subheader-content-title fadein-up delay-4 delay-wait-5">
         <div class="post-sub-title">blog</div>
         <h2>実里のひだまり日記</h2>
         <img class="" src="<?php echo get_template_directory_uri(); ?>/images/header/subheader-parts1.svg" alt="実里の外観画像">
@@ -26,7 +26,7 @@ $query = new WP_Query($args);
   </section>
 
   <div class="layerbg-beige ">
-    <section class="rounded-bg white-bg post-directory">
+    <section class="rounded-bg white-bg post-directory ">
       <div class="content-width-medium blog-content-wrap">
         <div class="article-container">
           <?php
