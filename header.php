@@ -5,7 +5,7 @@
     <meta charset="<?php bloginfo('charset') ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>実里・ほほえみ</title>
+    <title>実里</title>
     <link rel="icon" sizes="32x32" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
     <link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/apple-touch-icon.png">
     <link rel="manifest" href="/manifest.webmanifest" crossorigin="use-credentials">

@@ -22,19 +22,19 @@
     <ul class="subheader-list fadein-up delay-4 delay-wait-2">
       <li>
         <img src="<?php echo get_template_directory_uri(); ?>/images/header/subheader-check.svg" alt="">
-        <a href="">ごあいさつ</a>
+        <a href="#greeting">ごあいさつ</a>
       </li>
       <li>
         <img src="<?php echo get_template_directory_uri(); ?>/images/header/subheader-check.svg" alt="">
-        <a href="">実里の特徴</a>
+        <a href="#feature">実里の特徴</a>
       </li>
       <li>
         <img src="<?php echo get_template_directory_uri(); ?>/images/header/subheader-check.svg" alt="">
-        <a href="">会社概要</a>
+        <a href="#company">会社概要</a>
       </li>
       <li>
         <img src="<?php echo get_template_directory_uri(); ?>/images/header/subheader-check.svg" alt="">
-        <a href="">アクセス</a>
+        <a href="#access">アクセス</a>
       </li>
     </ul>
   </section>
@@ -116,7 +116,7 @@
             </li>
             <li>
               <h4><span>03</span>食事へのこだわり</h4>
-              地元からいただいた新鮮な野菜を活用し、季節感あふれる手作りメニューを提供。利用者様のリクエストにも柔軟に対応し、食事が楽しみになる時間を作ります。
+              地元からいただいた新鮮な野菜を活用し、手作りで季節感あふれる食事を提供。利用者様のリクエストにも柔軟に対応し、食事が楽しみになる時間を作ります。
             </li>
           </ul>
         </section>

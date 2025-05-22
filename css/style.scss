@@ -150,6 +150,11 @@
     display: block;
 
     width: 100%;
+    transition: opacity 0.3s ease;
+
+    &:hover {
+      opacity: 0.6;
+    }
 
     img {
       width: 100%;
@@ -193,6 +198,12 @@
         align-items: center;
         color: var(--text-base);
 
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: var(--primary-500);
+        }
+
 
         &::after {
           content: "";
@@ -218,6 +229,7 @@
             @include clamp-text(xs);
             line-height: 22px;
             font-weight: var(--weight-bold);
+            transition: color 0.3s ease;
 
             &:hover {
               color: var(--primary-500);
@@ -623,18 +635,24 @@
         /*ホバー後、x軸方向に1（相対値）伸長*/
       }
 
+      .blog-image {
+        display: block;
+        overflow: hidden;
+        margin-bottom: 14px;
+      }
+
       img {
         width: 100%;
-        margin-bottom: 14px;
         transition: transform 0.3s ease, filter 0.3s ease;
       }
 
       a:hover img {
+        object-fit: cover;
         transform: scale(1.05);
         filter: brightness(70%);
       }
 
-      span {
+      .category-common {
         padding: 4px 11px;
         display: inline-block;
         font-size: 13px;
@@ -1085,6 +1103,10 @@
       width: 157px;
       height: 130px;
       margin-bottom: 32px;
+      transition: opacity 0.3s ease;
+      &:hover {
+        opacity: 0.6;
+      }
     }
 
     .footer-contact-title {
@@ -1138,6 +1160,12 @@
         font-weight: var(--weight-bold);
         line-height: 2;
         margin-bottom: 0px;
+
+        transition: color 0.3s ease;
+
+        &:hover {
+          opacity: 0.6;
+        }
       }
     }
 
@@ -1152,6 +1180,14 @@
       list-style-type: "- ";
       font-size: 13px;
       line-height: 1.4;
+
+      a {
+        transition: color 0.3s ease;
+
+        &:hover {
+          opacity: 0.6;
+        }
+      }
     }
   }
 
@@ -1160,8 +1196,11 @@
       display: block;
       max-width: 358px;
       margin-left: auto;
+      transition: opacity 0.3s ease;
+      &:hover {
+        opacity: 0.6;
+      }
     }
-
     margin-top: 24px;
   }
 }
@@ -2691,12 +2730,14 @@ small {
 }
 
 //start カテゴリー毎のcss名
-.blog-category ,.swiper-slide{
+.blog-category,
+.swiper-slide {
 
   .category-minori {
     background-color: var(--category-minori);
     color: var(--primary-600);
   }
+
   .category-hohoemi {
     background-color: var(--category-hohoemi);
     color: var(--category-hohoemi-color);

@@ -23,19 +23,19 @@
       </li>
       <li>
         <img src="<?php echo get_template_directory_uri(); ?>/images/header/subheader-check.svg" alt="">
-        <a href="">実里のこだわり</a>
+        <a href="#commitment">実里のこだわり</a>
       </li>
       <li>
         <img src="<?php echo get_template_directory_uri(); ?>/images/header/subheader-check.svg" alt="">
-        <a href="">施設紹介</a>
+        <a href="#facility-overview">施設紹介</a>
       </li>
       <li>
         <img src="<?php echo get_template_directory_uri(); ?>/images/header/subheader-check.svg" alt="">
-        <a href="">1日の流れ</a>
+        <a href="#daily">1日の流れ</a>
       </li>
       <li>
         <img src="<?php echo get_template_directory_uri(); ?>/images/header/subheader-check.svg" alt="">
-        <a href="">スタッフ紹介</a>
+        <a href="#staff">スタッフ紹介</a>
       </li>
     </ul>
   </section>
@@ -70,7 +70,7 @@
     </section>
   </div>
 
-  <section class="rounded-bg beige-bg">
+  <section class="rounded-bg beige-bg" id="commitment">
     <div class="page-content content-width-medium fadein-up delay-4 delay-wait-5">
       <div class="page-content-left">
         <h2><span>実里のこだわり</span></h2>
@@ -93,9 +93,9 @@
             </div>
             <div class="commitment-item fadein-up delay-4 delay-wait-5">
               <div class="commitment-item-left">
-                <h3>季節を感じる食事へのこだわり</h3>
+                <h3>手作りの食事へのこだわり</h3>
                 <p>
-                  季節感を大切にした手作りの食事をご提供しています。栄養バランスに配慮しながら、利用者様のリクエストにも柔軟に対応しています。また、地元の方から新鮮な野菜をいただくこともあり、心を込めた料理で毎日の食事が楽しみになるよう工夫しています
+                季節感を大切にした手作りの食事をご提供しています。栄養バランスに配慮しながら、利用者様のリクエストにも柔軟に対応しています。また、地元の方から新鮮な野菜をいただくこともあり、心を込めた手作り料理で毎日の食事が楽しみになるよう工夫しています。
                 </p>
               </div>
               <div class="commitment-item-right">

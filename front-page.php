@@ -73,7 +73,7 @@
         <h3>デイサービス 実里</h3>
         <p>住み慣れた地域での暮らしを支える日帰りサービスです。送迎、食事、入浴に加え、個別ケアや楽しいレクリエーションを提供します。</p>
       </section>
-      <a class="main-service-content-left-item3 fadein-up delay-4" href="">
+      <a class="main-service-content-left-item3 fadein-up delay-4" href="http://kaigo-hohoemi2025.jp/">
         <picture>
           <source srcset="<?php echo get_template_directory_uri(); ?>/images/main/banner-sp.jpg" media="(max-width: 820px)"> <img src="<?php echo get_template_directory_uri(); ?>/images/main/banner-pc.jpg" alt="デイサービスほほえみを詳しく見る">
         </picture>
@@ -111,17 +111,19 @@
                 <article class="swiper-slide">
                   <header>
                     <a href="<?php the_permalink(); ?>">
-                      <?php if (has_post_thumbnail()) : ?>
-                        <img src="<?php the_post_thumbnail_url('medium'); ?>" alt="<?php the_title_attribute(); ?>">
-                      <?php else : ?>
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/dummy/blog-image.jpg" alt="サムネイル">
-                      <?php endif; ?>
+                      <span class="blog-image">
+                        <?php if (has_post_thumbnail()) : ?>
+                          <img src="<?php the_post_thumbnail_url('medium'); ?>" alt="<?php the_title_attribute(); ?>">
+                        <?php else : ?>
+                          <img src="<?php echo get_template_directory_uri(); ?>/images/dummy/blog-image.jpg" alt="サムネイル">
+                        <?php endif; ?>
+                      </span>
 
                       <?php
                       $category = get_the_category();
                       if (!empty($category)) :
                       ?>
-                        <span class="category-<?php echo $category[0]->slug; ?>"><?php echo esc_html($category[0]->name); ?></span>
+                        <span class="category-common category-<?php echo $category[0]->slug; ?>"><?php echo esc_html($category[0]->name); ?></span>
                       <?php endif; ?>
 
                       <h4><?php the_title(); ?></h4>
@@ -190,10 +192,10 @@
           <div>
             <div class="sp-family-section-border">
               <h3>みのりくん　♂</h3>
-              <span>3歳11カ月</span>
+              <span>2020/12/4</span>
             </div>
             <p>
-              紹介テキストダミー紹介テキストダミー紹介テキストダミー紹介テキストダミー紹介テキストダミー
+            犬なのに誰も鳴き声を聞いたことがありません。<br>自分のことを犬だと思っていないのかも・・。
             </p>
           </div>
         </div>
@@ -202,10 +204,10 @@
           <div>
             <div class="sp-family-section-border">
               <h3>りんちゃん　♀</h3>
-              <span>３歳</span>
+              <span>2021/8/27</span>
             </div>
             <p>
-              紹介テキストダミー紹介テキストダミー紹介テキストダミー紹介テキストダミー紹介テキストダミー
+            小さい頃から怖がりで雷が大の苦手。<br>雷の音が鳴るとすぐゲージから脱走します。<br>1番まんまるで歩く後ろ姿がなんとも言えないくらいキュート。
             </p>
           </div>
         </div>
@@ -214,11 +216,10 @@
           <div>
             <div class="sp-family-section-border">
               <h3>まるちゃん　♀</h3>
-              <span>１歳</span>
+              <span>2023/7/17</span>
             </div>
             <p>
-              パパ：みのり君、<br>
-              ママ：ご近所さん<br>
+            見た目はクールビューティーですが性格は1番甘えん坊さんです。<br>妹のるんちゃんにはめちゃくちゃ優しいお姉さん。
             </p>
           </div>
         </div>
@@ -227,12 +228,24 @@
           <div>
             <div class="sp-family-section-border">
               <h3>るんちゃん　♀</h3>
-              <span>8カ月</span>
+              <span>2024/3/25</span>
             </div>
             <p>
-              パパ：みのり君、<br>
-              ママ：りんちゃん<br>
-              実里で初めて産まれた子犬です
+            我が家で身体は1番小さいるんちゃん。<br>
+            態度だけは一人前。
+            </p>
+          </div>
+        </div>
+        <div class="family-section-content-item">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/main/family-img5.png" alt="どん丸くん">
+          <div>
+            <div class="sp-family-section-border">
+              <h3>どん丸君　♂</h3>
+              <span>2024/3/25</span>
+            </div>
+            <p>
+            お父さん譲りの何とも言えない癒し系。<br>見た目のフォルムはお母さん譲り。<br>
+            今はもらわれて大切にしてもらっています。
             </p>
           </div>
         </div>

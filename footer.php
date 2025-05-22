@@ -49,7 +49,9 @@
       <div class="footer-container fadein-up delay-4 delay-wait-1">
 
         <div class="footer-contact">
-          <img src="<?php echo get_template_directory_uri(); ?>/images/common/logo-minori.svg" alt="実里ロゴ">
+          <a href="<?php echo home_url('/'); ?>">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/common/logo-minori.svg" alt="実里ロゴ">
+          </a>
           <p class="footer-contact-title">住宅型有料老人ホーム 実里<br>
             デイサービス実里</p>
           <p class="footer-contact-addr">群馬県渋川市赤城町津久田266-2</p>
@@ -66,11 +68,10 @@
               実里について <span class="icon">+</span>
             </button>
             <ul class="accordion-content">
-              <li><a href="<?php echo home_url('/about#vision'); ?>">理念・想い</a></li>
-              <li><a href="<?php echo home_url('/about#history'); ?>">ヒストリー</a></li>
-              <li><a href="<?php echo home_url('/about#strength'); ?>">私たちの強み</a></li>
-              <li><a href="<?php echo home_url('/about#feature'); ?>">目指す姿</a></li>
-              <li><a href="<?php echo home_url('/about#company'); ?>">施設概要</a></li>
+              <li><a href="<?php echo home_url('/about#greeting'); ?>">ごあいさつ</a></li>
+              <li><a href="<?php echo home_url('/about#feature'); ?>">実里の特徴</a></li>
+              <li><a href="<?php echo home_url('/about#company'); ?>">会社概要</a></li>
+              <li><a href="<?php echo home_url('/about#access'); ?>">アクセス</a></li>
             </ul>
           </li>
 
@@ -79,10 +80,11 @@
               サービス <span class="icon">+</span>
             </button>
             <ul class="accordion-content">
+              <li><a href="<?php echo home_url('/service#business'); ?>">事業紹介</a></li>
+              <li><a href="<?php echo home_url('/service#commitment'); ?>">実里のこだわり</a></li>
               <li><a href="<?php echo home_url('/service#facility-overview'); ?>">施設紹介</a></li>
-              <li><a href="<?php echo home_url('/service#support'); ?>">支援内容</a></li>
               <li><a href="<?php echo home_url('/service#daily'); ?>">1日の流れ</a></li>
-              <li><a href="<?php echo home_url('/service#staff'); ?>">従業員紹介</a></li>
+              <li><a href="<?php echo home_url('/service#staff'); ?>">スタッフ紹介</a></li>
             </ul>
           </li>
 
@@ -117,7 +119,7 @@
           </li>
         </ul>
 
-        <a href="" class="footer-banner sp-footer-nav">
+        <a href="http://kaigo-hohoemi2025.jp/" class="footer-banner sp-footer-nav">
           <img src="<?php echo get_template_directory_uri(); ?>/images/footer/img_banner.jpg" alt="">
         </a>
 
@@ -126,21 +128,21 @@
             <div class="footer-nav-inner">
               <h4><a href="<?php echo home_url('/about'); ?>">実里について</a></h4>
               <ul>
-                <li><a href="<?php echo home_url('/about#company'); ?>">理念・想い</a></li>
-                <li><a href="<?php echo home_url('/about#history'); ?>">ヒストリー</a></li>
-                <li><a href="<?php echo home_url('/about#strength'); ?>">私たちの強み</a></li>
-                <li><a href="<?php echo home_url('/about#feature'); ?>">目指す姿</a></li>
-                <li><a href="<?php echo home_url('/about#company'); ?>">施設概要</a></li>
+                <li><a href="<?php echo home_url('/about#greeting'); ?>">ごあいさつ</a></li>
+                <li><a href="<?php echo home_url('/about#feature'); ?>">実里の特徴</a></li>
+                <li><a href="<?php echo home_url('/about#company'); ?>">会社概要</a></li>
+                <li><a href="<?php echo home_url('/about#access'); ?>">アクセス</a></li>
               </ul>
             </div>
 
             <div class="footer-nav-inner">
               <h4><a href="<?php echo home_url('/service'); ?>">サービス紹介</a></h4>
               <ul>
+                <li><a href="<?php echo home_url('/service#business'); ?>">事業紹介</a></li>
+                <li><a href="<?php echo home_url('/service#commitment'); ?>">実里のこだわり</a></li>
                 <li><a href="<?php echo home_url('/service#facility-overview'); ?>">施設紹介</a></li>
-                <li><a href="<?php echo home_url('/service#support'); ?>">支援内容</a></li>
                 <li><a href="<?php echo home_url('/service#daily'); ?>">1日の流れ</a></li>
-                <li><a href="<?php echo home_url('/service#staff'); ?>">従業員紹介</a></li>
+                <li><a href="<?php echo home_url('/service#staff'); ?>">スタッフ紹介</a></li>
               </ul>
             </div>
 
@@ -160,7 +162,7 @@
               <h4><a href="<?php echo home_url('/contact'); ?>">お問い合わせ</a></h4>
             </div>
           </div>
-          <a href="" class="footer-banner">
+          <a href="http://kaigo-hohoemi2025.jp/" class="footer-banner">
             <img src="<?php echo get_template_directory_uri(); ?>/images/footer/img_banner.jpg" alt="ほほえみサイトへ移動します">
           </a>
         </div>

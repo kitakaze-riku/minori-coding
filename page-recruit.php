@@ -18,24 +18,24 @@
     <ul class="subheader-list fadein-up delay-4 delay-wait-5">
       <li>
         <img src="<?php echo get_template_directory_uri(); ?>/images/header/subheader-check.svg" alt="">
-        <a href="">採用メッセージ</a>
+        <a href="#recruit-message">採用メッセージ</a>
       </li>
       <li>
         <img src="<?php echo get_template_directory_uri(); ?>/images/header/subheader-check.svg" alt="">
-        <a href="">求める人物像</a>
+        <a href="#desired-person">求める人物像</a>
       </li>
       <li>
         <img src="<?php echo get_template_directory_uri(); ?>/images/header/subheader-check.svg" alt="">
-        <a href="">先輩社員紹介</a>
+        <a href="#staff">先輩社員紹介</a>
       </li>
       <li>
         <img src="<?php echo get_template_directory_uri(); ?>/images/header/subheader-check.svg" alt="">
-        <a href="">募集要項・資格</a>
+        <a href="#requirements">募集要項・資格</a>
       </li>
     </ul>
   </section>
 
-  <div class="layerbg-beige">
+  <div class="layerbg-beige" id="recruit-message">
     <section class="rounded-bg white-bg">
       <div class="page-content content-width-medium fadein-up delay-4 delay-wait-5">
         <div class="page-content-left">

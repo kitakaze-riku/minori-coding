@@ -9,7 +9,7 @@
         </div>
         <nav class="header-nav-wrap fadein-down delay-5">
             <div class="header-nav-inner">
-                <a class="header-nav-inner-top" href="<?php echo esc_url(home_url('/')); ?>">デイサービスほほえみ</a>
+                <a class="header-nav-inner-top" href="http://kaigo-hohoemi2025.jp/">デイサービスほほえみ</a>
                 <ul class="header-nav">
                     <li><a href="<?php echo esc_url(home_url('/about')); ?>">実里について</a></li>
                     <li><a href="<?php echo esc_url(home_url('/service')); ?>">サービス紹介</a></li>
@@ -39,11 +39,10 @@
                         実里について <span class="icon">+</span>
                     </button>
                     <ul class="accordion-content">
-                        <li><a href="<?php echo esc_url(home_url('/about#vision')); ?>">理念・想い</a></li>
-                        <li><a href="#">ヒストリー</a></li>
-                        <li><a href="#">私たちの強み</a></li>
-                        <li><a href="<?php echo esc_url(home_url('/about#feature')); ?>">目指す姿</a></li>
-                        <li><a href="<?php echo esc_url(home_url('/about#company')); ?>">施設概要</a></li>
+                        <li><a href="<?php echo esc_url(home_url('/about#greeting')); ?>">ごあいさつ</a></li>
+                        <li><a href="<?php echo esc_url(home_url('/about#feature')); ?>">実里の特徴</a></li>
+                        <li><a href="<?php echo esc_url(home_url('/about#company')); ?>">会社概要</a></li>
+                        <li><a href="<?php echo esc_url(home_url('/about#access')); ?>">アクセス</a></li>
                     </ul>
                 </li>
                 <li class="accordion">
@@ -51,8 +50,9 @@
                         サービス <span class="icon">+</span>
                     </button>
                     <ul class="accordion-content">
+                        <li><a href="<?php echo esc_url(home_url('/service#business')); ?>">事業紹介</a></li>
+                        <li><a href="<?php echo esc_url(home_url('/commitment#')); ?>">実里のこだわり</a></li>
                         <li><a href="<?php echo esc_url(home_url('/service#facility-overview')); ?>">施設紹介</a></li>
-                        <li><a href="<?php echo esc_url(home_url('/service#')); ?>">支援内容</a></li>
                         <li><a href="<?php echo esc_url(home_url('/service#daily')); ?>">1日の流れ</a></li>
                         <li><a href="<?php echo esc_url(home_url('/service#staff')); ?>">従業員紹介</a></li>
                     </ul>
@@ -88,7 +88,7 @@
                 </li>
 
                 <li class="accordion">
-                    <a href="<?php echo esc_url(home_url('/')); ?>" class="accordion-btn">
+                    <a href="http://kaigo-hohoemi2025.jp/" class="accordion-btn">
                         デイサービスほほえみ <span class="icon"> <img src="<?php echo get_template_directory_uri(); ?>/images/common/open_in_new-red.svg" alt=""></span>
                     </a>
                 </li>
